@@ -38,6 +38,7 @@ const User = new Schema(
   { timestamps: true }
 )
 export default mongoose.model('users', User)
+```
 
 
 
