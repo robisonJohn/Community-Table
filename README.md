@@ -8,6 +8,36 @@ This is an application that integrates information between grocery stores and co
 <a href="https://docs.google.com/document/d/1_X-6IAQKls_ZJ4oxxiJzS5EmqE0wVMx_C_3YDJvBLYQ/edit?usp=sharing">Overview</a>
 <p>Schema: </p>
 ```
+import mongoose from 'mongoose'
+const Schema = mongoose.Schema
+const Product = new Schema(
+  {
+    name: { type: String, required: true },
+    category:{type: String, required: true}
+    imgURL: { type: String, required: true },
+    description: { type: String, required: true },
+    quantity: { type: String, required: true }
+  },
+  { timestamps: true }
+)
+export default mongoose.model('products', Product)
+
+const User = new Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+    },
+    companyname: {
+      type: String,
+      required: true,
+    },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
+  { timestamps: true }
+)
+export default mongoose.model('users', User)
 ```
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema
@@ -39,7 +69,6 @@ const User = new Schema(
   { timestamps: true }
 )
 export default mongoose.model('users', User)
-
 
 
 
