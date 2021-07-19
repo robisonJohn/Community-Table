@@ -7,7 +7,7 @@ This is an application that integrates information between grocery stores and co
 <a href="https://docs.google.com/document/d/1OzatiZ3santSrK4_rQHGPNGZ-xBpKb39n5eck1PhdOM/edit?usp=sharing">Team Expectations</a>
 <a href="https://docs.google.com/document/d/1_X-6IAQKls_ZJ4oxxiJzS5EmqE0wVMx_C_3YDJvBLYQ/edit?usp=sharing">Overview</a>
 <p>Schema: </p>
-```
+
 
 ```
 
