@@ -9,7 +9,6 @@ This is an application that integrates information between grocery stores and co
 <p>Schema: </p>
 ```
 
-```
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 const Product = new Schema(
