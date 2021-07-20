@@ -4,8 +4,8 @@ import * as controllers from '../controllers/users.js'
 const router = Router()
 
 router.post('/sign-up', controllers.signUp)
-router.post('/login', controllers.login)
+router.post('/login', controllers.logIn)
 router.get('/verify', controllers.verify)
-router.post('/change-password', controllers.changePassword)
+// router.post('/change-password', controllers.changePassword)
 
 export default router
