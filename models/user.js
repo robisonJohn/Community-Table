@@ -12,7 +12,7 @@ const User = new Schema(
         },
         email: { type: String, required: true },
         password_digest: { type: String, required: true, select: false },
-        location: { type: String, required: true }
+        address: { type: String, required: true }
 
     },
     { timestamps: true }
