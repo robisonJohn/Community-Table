@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-const TOKEN_KEY = process.env.TOKEN_KEY || 'YouWereMyBrotherAnakinIlovedYou';
+const TOKEN_KEY = process.env.TOKEN_KEY || 'coolestdevsontheblockchangingtheworldoneappicationatatime';
 
 const restrict = (req, res, next) => {
     try {

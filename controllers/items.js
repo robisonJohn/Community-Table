@@ -1,4 +1,4 @@
-import Item from "../models/item";
+import Item from "../models/item.js";
 
 export const getItems = async (req, res) => {
   try {
@@ -53,3 +53,4 @@ export const deleteItem = async (req, res) => {
     console.log(error.message)
     res.status(500).json({ error: error.message })
   }
+}
