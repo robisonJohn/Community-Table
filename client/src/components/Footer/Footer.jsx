@@ -14,6 +14,7 @@ function Footer() {
           to="https://github.com/robisonJohn/Community-Table/tree/main"
           target="_blank"
           width="40"
+          alt="github-logo"
         />
       </div>
     </div>
