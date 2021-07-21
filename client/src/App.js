@@ -1,41 +1,52 @@
-import { getItems } from "./services/items.js";
 import { useEffect, useState } from "react";
 import Home from "./screens/Home/Home";
-import { lowestQuantity, highestQuantity } from "./utils/sort.js";
-import { filterDryGoods, filterProduce } from "./utils/filter.js";
+import Items from "./screens/Items/Items";
+import SignUp from "./screens/SignUp/SignUp";
+import Login from "./screens/Login/Login";
+import Logout from "./screens/Logout/Logout"
+import AddItem from "./screens/AddItem/AddItem";
+import ItemDetail from "./screens/ItemDetail/ItemDetail";
+import ItemEdit from "./screens/ItemEdit/ItemEdit";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 
-// we can also test our sort and filter functions
-
-// getItem, createItem, updateItem, deleteItem
-
 function App() {
-  const [items, setItems] = useState([]);
+const [user, setUser] = useState(null)
+
   useEffect(() => {
-    const fetchItems = async () => {
-      const allItems = await getItems();
-      setItems(allItems);
-      console.log("set items completed");
-    };
-    fetchItems();
-  }, []);
-  console.log(items);
-  console.log(
-    `From lowest quantity to highest quantity: ${lowestQuantity(items)}`
-  );
-  console.log(
-    `From highest quantity to lowest quantity: ${highestQuantity(items)}`
-  );
-  console.log(`Only dry goods: ${filterDryGoods(items)}`);
-  console.log(`Only produce: ${filterProduce(items)}`);
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
 
   return (
     <div className="App">
-      <h1>hello there</h1>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home user={user}/>
+        </Route>
+        <Route path="/inventory">
+          <Items />
+        </Route>
+        <Route path="/sign-up">
+          <SignUp setUser={setUser}/>
+        </Route>
+        <Route path="/login">
+          <Login setUser={setUser} />
+        </Route>
+        <Route path="/logout">
+          <Logout setUser={setUser}/>
+        </Route>
+        <Route path='/add-item'>
+          <AddItem user={user}/>
+        </Route>
+        <Route exact path="/items/:id">
+          <ItemDetail user={user} />
+        </Route>
+        <Route exact path="/items/:id/edit">
+          {user ? <ItemEdit user={user} /> : <Redirect to='/' />}
         </Route>
       </Switch>
     </div>

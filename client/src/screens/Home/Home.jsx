@@ -1,5 +1,5 @@
 import "./Home.css";
-import { Layout, ItemCards } from "../../components";
+import { Layout } from "../../components";
 
 const Home = (props) => {
   return (
