@@ -4,7 +4,7 @@ import "./NavBar.css";
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/add-item">
-      Add to <Table></Table>
+      Add to Table
     </NavLink>
     <NavLink className="link" to="/logout">
       Logout
