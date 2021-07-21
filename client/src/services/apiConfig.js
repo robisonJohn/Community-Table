@@ -11,6 +11,11 @@ const api = axios.create({
         ? 'https://community-table-mvp.herokuapp.com/api'
         : 'http://localhost:3000/api'
 })
+/*
+const api = axios.create({
+    baseURL: 'https://community-table-mvp.herokuapp.com/api'
+})
+*/
 
 api.interceptors.request.use(async function (config) {
     config.headers['Authorization'] = await getToken()
