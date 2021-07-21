@@ -8,11 +8,11 @@ const User = new Schema(
         },
         company_name: {
             type: String,
-            required: true,
+            required: false,
         },
         email: { type: String, required: true },
         password_digest: { type: String, required: true, select: false },
-        address: { type: String, required: true }
+        address: { type: String, required: false}
 
     },
     { timestamps: true }
