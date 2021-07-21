@@ -35,7 +35,11 @@ const NavBar = ({ user }) => {
     <nav>
       <div className="NavBar">
         <NavLink className="logo" to="/">
-          <img src="https://imgur.com/cyWp9Px" id="logo" />
+          <img
+            src="https://i.imgur.com/cyWp9Px.png"
+            id="companylogo"
+            width="250"
+          />
         </NavLink>
         <div className="links">
           {user && (

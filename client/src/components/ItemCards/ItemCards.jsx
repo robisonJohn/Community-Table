@@ -8,7 +8,7 @@ const ItemCards = () => {
 
   useEffect(() => {
     const fetchInventory = async () => {
-      const allInventory = await getInventory();
+      const allInventory = await getItems();
       setInventory(allInventory);
     };
     fetchInventory();
@@ -29,7 +29,7 @@ const ItemCards = () => {
 
   return (
     <div className="item-cards">
-      <div className="place-holder">PLACEHOLDER</div>
+      <div className="place-holder">Inventory</div>
       <div className="cards">{CARDS}</div>
     </div>
   );
