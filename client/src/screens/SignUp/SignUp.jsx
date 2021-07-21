@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { signup } from "../../services/users";
+import { signUp } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import "./SignUp.css"
+import { Layout } from "../../components";
 
 const SignUp = (props) => {
   const history = useHistory()
@@ -28,7 +29,7 @@ const onSignUp = async (event) => {
   event.preventDefault()
   const { setUser } = props
   try {
-    const user = await signup(form)
+    const user = await signUp(form)
     setUser(user)
     history.push('/')
   } catch (error) {
@@ -62,6 +63,7 @@ const renderError = () => {
 const { username, company, email, password, passwordConfirmation, address } = form
 
 return (
+  <Layout>
   <div className='signup-container'>
     <h3>Sign Up</h3>
     <form onSubmit={onSignUp}>
@@ -123,6 +125,7 @@ return (
       {renderError()}
     </form>
   </div>
+  </Layout>
 )
 }
 
