@@ -91,3 +91,5 @@ const ItemEdit = (props) => {
     </Layout>
   );
 };
+
+export default ItemEdit;
