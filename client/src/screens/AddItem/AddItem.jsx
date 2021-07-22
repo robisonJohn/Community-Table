@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Layout } from "../../components"
 import { Redirect } from "react-router-dom"
-import { addItem } from "../../services/items"
+import { addItem, createItem  } from "../../services/items"
 import "./AddItem.css"
-import { createConfigItem } from "@babel/core";
 
 const AddItem = (props) => {
   const [item, setItem] = useState({
