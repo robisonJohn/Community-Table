@@ -14,19 +14,22 @@ body {
 }
 
 #login-form {
-  border: 3px solid #546747;
+  border: 3px solid #2b331f;
   border-radius: 2%;
   padding: 20px;
   width: 500px;
+  background-color: white;
+  height: 300px;
 }
 
 #login-header {
   text-align: center;
-  color:#546747;
+  color: #546747;
 }
 
 .form-element {
   margin: 10px;
+  
 }
 
 .login-row {
@@ -36,3 +39,15 @@ body {
 #header-text {
   font-size: 25px;
 }
+
+.form-input {
+  background-color: #fddca5 !important;
+  font-size: 20px !important;
+}
+
+#login-button {
+  background-color: #2b331f !important;
+  font-size: 20px;
+  width: 100px;
+}
+

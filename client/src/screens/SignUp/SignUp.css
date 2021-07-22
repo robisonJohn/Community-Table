@@ -1,3 +1,16 @@
 .signup-container {
-  margin-top: 200px;
+  margin-top: 100px;
+  display: grid;
+  justify-content: center;
+}
+
+.signup-form {
+  border: 3px solid #2b331f;
+  width: 600px;
+  padding: 20px;
+}
+
+.sign-input {
+  background-color: #fddca5 !important;
+  color: #546747 !important; 
 }

@@ -44,7 +44,7 @@ const Login = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <Button type="submit" className="form-element">
+        <Button type="submit" className="form-element" id="login-button">
           {form.errorMsg}
         </Button>
       );
@@ -72,7 +72,9 @@ const Login = (props) => {
               name="email"
               placeholder="Email"
               value={email}
-              onChange={handleChange}/>
+              onChange={handleChange}
+              className="form-input"
+              />
             </Form.Group>   
 
             <Form.Group className="form-element">
@@ -82,10 +84,12 @@ const Login = (props) => {
               name="password"
               placeholder="Password"
               value={password}
-              onChange={handleChange}/>
-              {renderError()}
+              onChange={handleChange}
+              className="form-input"
+              />    
             </Form.Group>
-            <p>Forgot password...</p>
+              {renderError()}
+              <p>Forgot password...</p>
           </Form>
           </Row>
         </Col>
