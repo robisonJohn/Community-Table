@@ -3,7 +3,7 @@ import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 
 const Layout = (props) => (
-  <div className="layout">
+  <div className="Layout">
     <NavBar user={props.user} />
     <div className="layout-children">{props.children}</div>
     <Footer />

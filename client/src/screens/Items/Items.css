@@ -1,0 +1,17 @@
+.Items {
+  padding-top: 150px;
+  background-color: #fafaf2;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+  padding-top: 5rem;
+}
+
+.layout-children {
+  flex: 2;
+  padding: 100px;
+}

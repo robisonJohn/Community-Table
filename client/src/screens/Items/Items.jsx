@@ -1,36 +1,40 @@
 import { useState, useEffect } from "react";
-import { Layout, Item } from '../../components'
-import { getItems } from '../../services/items'
-import './Items.css'
+import { Layout, Item } from "../../components";
+import { getItems } from "../../services/items";
+import "./Items.css";
 
 const Items = (props) => {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const fetchItems = async() => {
-      const allItems = await getItems()
-      setItems(allItems)
-    }
-    fetchItems()
-  }, [])
+    const fetchItems = async () => {
+      const allItems = await getItems();
+      setItems(allItems);
+    };
+    fetchItems();
+  }, []);
 
-  return(
-<Layout  user={props.user}>
-<div className="items">
-{items.map((item, index) => {
-          return (
-            <Item
-              _id={item._id}
-              imgURL={item.imgURL}
-              name={item.name}
-              category={item.category}
-              quantity={item.quantity}
-              key={index}
-            />)
+  return (
+    <Layout user={props.user}>
+      <div className="Items">
+        <h3 id="inventory-header">Table Inventory</h3>
+        <div className="items-container">
+          {items.map((item, index) => {
+            return (
+              <Item
+                _id={item._id}
+                imgURL={item.imgURL}
+                name={item.name}
+                category={item.category}
+                quantity={item.quantity}
+                key={index}
+              />
+            );
           })}
-</div>
-</Layout>
-  )
-}
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
-export default Items
+export default Items;
