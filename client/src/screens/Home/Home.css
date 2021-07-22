@@ -9,5 +9,14 @@ body{
 }
 
 .main-img{
+  background-image: url("https://www.phillymag.com/wp-content/uploads/sites/3/2015/03/MO-grocery-delivery-jason-varney-940x540.jpg");
   display:flex;
+  width: 80vw;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.sign-up-main{
+  display: flex;
+  height: 30px;
 }

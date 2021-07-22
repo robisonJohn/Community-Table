@@ -7,11 +7,7 @@ const Home = (props) => {
       <div className="home">
         <div className="main-img">
           <h3> BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE AT A TIME</h3>
-          <img
-            src="https://www.phillymag.com/wp-content/uploads/sites/3/2015/03/MO-grocery-delivery-jason-varney-940x540.jpg"
-            alt="groceries"
-          />
-          <button>Sign Up</button>
+          <button className="sign-up-main">Sign Up</button>
         </div>
 
         <section>

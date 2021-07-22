@@ -18,4 +18,4 @@ const Logout = (props) => {
   return ''
 }
 
-export default logout
+export default Logout

@@ -3,6 +3,7 @@ import { login } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import "./Login.css";
 import { Layout } from "../../components";
+import { Form, Container, Button } from 'react-bootstrap';
 
 const Login = (props) => {
   const history = useHistory();
@@ -43,44 +44,45 @@ const Login = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit" className={toggleForm}>
+        <Button type="submit" className={toggleForm}>
           {form.errorMsg}
-        </button>
+        </Button>
       );
     } else {
-      return <button type="submit">Login</button>;
+      return <Button type="submit">Login</Button>;
     }
   };
 
   const { email, password } = form;
   return (
     <Layout>
-      <div className="login-container">
-        <h2>Login</h2>
-        <form onSubmit={onLogin}>
-          <label>Email</label>
-          <input
+      <Container className="login-container">
+        <Form>
+          <Form.Label>Login</Form.Label>
+          <Form.Group>
+            <Form.Label>Email</Form.Label>
+            <Form.Control 
             required
-            type="text"
+            type="email"
             name="email"
-            value={email}
             placeholder="Enter Email"
-            onChange={handleChange}
-          />
+            value={email}
+            onChange={handleChange}/>
+          </Form.Group>   
 
-          <label>Password</label>
-          <input
+          <Form.Group>
+            <Form.Label>Password</Form.Label>
+            <Form.Control 
             required
-            type="text"
+            type="password"
             name="password"
-            value={password}
             placeholder="Enter Password"
-            onChange={handleChange}
-          />
-
-          {renderError()}
-        </form>
-      </div>
+            value={password}
+            onChange={handleChange}/>
+            {renderError()}
+          </Form.Group>
+        </Form>
+      </Container>
     </Layout>
   );
 };
