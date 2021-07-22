@@ -1,4 +1,4 @@
-body{
+body {
   background-color: fafaf2;
 }
 
@@ -6,17 +6,52 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: fafaf2;
 }
 
 .main-img{
   background-image: url("https://www.phillymag.com/wp-content/uploads/sites/3/2015/03/MO-grocery-delivery-jason-varney-940x540.jpg");
-  display:flex;
+  background-size: cover;
+  display: flex;
   width: 80vw;
   height: 500px;
-  margin: 20px auto;
+  margin: 200px auto 40px auto;
+  flex-direction: column;
+}
+
+.main-txt{
+  width: 250px;
+  margin: 80px 40px;
+}
+
+.main-txt h3{
+  font-size: 30px;
 }
 
 .sign-up-main{
-  display: flex;
   height: 30px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.category-box{
+  display: flex;
+  width: 80vw;
+  height: 50vh;
+  justify-content: space-between;
+}
+
+
+.produce{
+  background-image: url("https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg");
+  background-size: cover;
+  display: flex;
+  width: 38vw;
+}
+
+.dry-goods{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/907/539/595/cereal-food-bread-noodles-wheat-hd-wallpaper-thumb.jpg");
+  background-size: cover;
+  display: flex;
+  width: 38vw;
 }

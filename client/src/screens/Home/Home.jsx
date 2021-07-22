@@ -6,26 +6,18 @@ const Home = (props) => {
     <Layout>
       <div className="home">
         <div className="main-img">
-          <h3> BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE AT A TIME</h3>
+          <div className="main-txt">
+          <h3> BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE  <br/>  AT A TIME</h3>
           <button className="sign-up-main">Sign Up</button>
+          </div>
         </div>
 
-        <section>
-          <div className="catergories-img">
-            <img
-              src="https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg"
-              alt="produce"
-              width="500"
-            />
-            <h3>Produce</h3>
+        <section className="category-box">
+          <div className="produce">
+            <h3 className="txt-category">Produce</h3>
           </div>
-          <div className="catergories-img">
-            <img
-              src="https://c4.wallpaperflare.com/wallpaper/907/539/595/cereal-food-bread-noodles-wheat-hd-wallpaper-thumb.jpg"
-              alt="dry-goods"
-              width="500"
-            />
-            <h3>Dry Goods</h3>
+          <div className="dry-goods">
+            <h3 className="txt-category">Dry Goods</h3>
           </div>
         </section>
       </div>
