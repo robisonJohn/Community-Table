@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Layout, Item } from '../../components'
 import { getItems } from '../../services/items'
-import { Route } from "react-router-dom"
 import './Items.css'
 
 const Items = (props) => {

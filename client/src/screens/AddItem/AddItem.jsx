@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Layout } from "../../components"
 import { Redirect } from "react-router-dom"
-import { addItem, createItem  } from "../../services/items"
+import { createItem  } from "../../services/items"
 import "./AddItem.css"
 
 const AddItem = (props) => {
@@ -30,11 +30,11 @@ const AddItem = (props) => {
   }
 
   if (isCreated){
-    return <Redirect to={'/items'} />
+    return <Redirect to={'/inventory'} />
   }
   return(
     <Layout  user={props.user}>
-      <from className='create-form' onSubmit={handleSubmit}>
+      <form className='create-form' onSubmit={handleSubmit}>
       <input
           className='input-name'
           placeholder='Name'
@@ -79,7 +79,7 @@ const AddItem = (props) => {
         <button type='submit' className='submit-button'>
           Add Item
         </button>
-      </from>
+      </form>
     </Layout>
   )
 }
