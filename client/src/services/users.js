@@ -12,6 +12,17 @@ export const signUp = async (credentials) => {
     }
 }
 
+export const login = async (credentials) => {
+    try {
+        const resp = await api.post('/login', credentials)
+        localStorage.setItem('token', resp.data.token)
+        const user = jwtDecode(resp.data.token)
+        return user
+    } catch (error) {
+        throw error
+    }
+}
+
 export const signOut = async () => {
     try {
         localStorage.removeItem('token')
