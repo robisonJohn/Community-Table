@@ -23,7 +23,7 @@ export const login = async (credentials) => {
     }
 }
 
-export const signOut = async () => {
+export const logout = async () => {
     try {
         localStorage.removeItem('token')
         return true

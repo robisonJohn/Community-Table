@@ -7,7 +7,8 @@ import Logout from "./screens/Logout/Logout"
 import AddItem from "./screens/AddItem/AddItem";
 import ItemDetail from "./screens/ItemDetail/ItemDetail";
 import ItemEdit from "./screens/ItemEdit/ItemEdit";
-import { Switch, Route } from "react-router-dom";
+import { verifyUser } from "./services/users"
+import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 
 function App() {

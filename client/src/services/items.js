@@ -41,7 +41,7 @@ export const updateItem = async (id, item) => {
 
 export const deleteItem = async id => {
     try {
-        const response = await api.delete(`/products/${id}`)
+        const response = await api.delete(`/items/${id}`)
         return response.data
     }
     catch (error) {

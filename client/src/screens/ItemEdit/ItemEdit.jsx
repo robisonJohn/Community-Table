@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Layout } from "../../components";
-import { getItem, upadateItem } from "../../services/items";
+import { getItem, updateItem } from "../../services/items";
 import { useParams, Redirect } from "react-router-dom";
-import "ItemEdit.css";
+import "./ItemEdit.css";
 
 const ItemEdit = (props) => {
   const [item, setItem] = useState({
@@ -19,7 +19,7 @@ const ItemEdit = (props) => {
   useEffect(() => {
     const fetchItem = async () => {
       const item = await getItem(id);
-      setitem(item);
+      setItem(item);
     };
     fetchItem();
   }, [id]);
