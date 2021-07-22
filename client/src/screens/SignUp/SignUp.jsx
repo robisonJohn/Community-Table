@@ -66,6 +66,7 @@ const { username, company, email, password, passwordConfirmation, address } = fo
 return (
   <Layout>
     <Container className='signup-container'>
+      <h1>COME JOIN THE TABLE</h1>
         <Form onSubmit={onSignUp}>
           <Form.Label>Sign Up</Form.Label>
           <Form.Group>

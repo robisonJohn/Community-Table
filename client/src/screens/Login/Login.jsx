@@ -3,7 +3,7 @@ import { login } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import "./Login.css";
 import { Layout } from "../../components";
-import { Form, Container, Button } from 'react-bootstrap';
+import { Form, Container, Button, Col, Row } from 'react-bootstrap';
 
 const Login = (props) => {
   const history = useHistory();
@@ -44,45 +44,53 @@ const Login = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <Button type="submit" className={toggleForm}>
+        <Button type="submit" className="form-element">
           {form.errorMsg}
         </Button>
       );
     } else {
-      return <Button type="submit">Login</Button>;
+      return <Button type="submit" className="form-element" id="login-button">Login</Button>;
     }
   };
 
   const { email, password } = form;
   return (
     <Layout>
+      <body>
       <Container className="login-container">
-        <Form>
-          <Form.Label>Login</Form.Label>
-          <Form.Group>
-            <Form.Label>Email</Form.Label>
-            <Form.Control 
-            required
-            type="email"
-            name="email"
-            placeholder="Enter Email"
-            value={email}
-            onChange={handleChange}/>
-          </Form.Group>   
+        <Col className="login-body">
+          <Row className="login-row">
+            <div id="login-header"><h1 id="header-text">TAKE A SEAT</h1></div>
+          </Row>
+          <Row className="login-row">
+            <Form id="login-form">
+            <p>Don't have an account? Sign up here!</p>
+            <Form.Group className="form-element">
+              <Form.Control 
+              required
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleChange}/>
+            </Form.Group>   
 
-          <Form.Group>
-            <Form.Label>Password</Form.Label>
-            <Form.Control 
-            required
-            type="password"
-            name="password"
-            placeholder="Enter Password"
-            value={password}
-            onChange={handleChange}/>
-            {renderError()}
-          </Form.Group>
-        </Form>
+            <Form.Group className="form-element">
+              <Form.Control 
+              required
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={password}
+              onChange={handleChange}/>
+              {renderError()}
+            </Form.Group>
+            <p>Forgot password...</p>
+          </Form>
+          </Row>
+        </Col>
       </Container>
+      </body>
     </Layout>
   );
 };
