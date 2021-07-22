@@ -28,7 +28,7 @@ const ItemCards = () => {
     );
 
   return (
-    <div className="item-cards">
+    <div className="ItemCards">
       <div className="place-holder">Inventory</div>
       <div className="cards">{CARDS}</div>
     </div>
