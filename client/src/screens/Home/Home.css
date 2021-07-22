@@ -15,3 +15,8 @@ body{
   height: 500px;
   margin: 20px auto;
 }
+
+.sign-up-main{
+  display: flex;
+  height: 30px;
+}
