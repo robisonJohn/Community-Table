@@ -3,6 +3,7 @@ import { signUp } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import "./SignUp.css"
 import { Layout } from "../../components";
+import { Form, Container, Button } from 'react-bootstrap';
 
 const SignUp = (props) => {
   const history = useHistory()
@@ -51,12 +52,12 @@ const renderError = () => {
   const toggleForm = form.isError ? 'danger' : ''
   if (form.isError) {
     return (
-      <button type='submit' className={toggleForm}>
+      <Button type='submit' className={toggleForm}>
         {form.errorMsg}
-      </button>
+      </Button>
     )
   } else {
-    return <button type='submit'>Sign Up</button>
+    return <Button type='submit'>Sign Up</Button>
   }
 }
 
@@ -64,67 +65,86 @@ const { username, company, email, password, passwordConfirmation, address } = fo
 
 return (
   <Layout>
-  <div className='signup-container'>
-    <h3>Sign Up</h3>
-    <form onSubmit={onSignUp}>
-      <label>Username</label>
-      <input
-        required
-        type='text'
-        name='username'
-        value={username}
-        placeholder='Enter username'
-        onChange={handleChange}
-      />
-      <label>Company</label>
-      <input
-        required
-        type='text'
-        name='company'
-        value={company}
-        placeholder='Enter company'
-        onChange={handleChange}
-      />
-      <label>Email address</label>
-      <input
-        required
-        type='email'
-        name='email'
-        value={email}
-        placeholder='Enter email'
-        onChange={handleChange}
-      />
-      <label>Password</label>
-      <input
-        required
-        name='password'
-        value={password}
-        type='password'
-        placeholder='Password'
-        onChange={handleChange}
-      />
-      <label>Password Confirmation</label>
-      <input
-        required
-        name='passwordConfirmation'
-        value={passwordConfirmation}
-        type='password'
-        placeholder='Confirm Password'
-        onChange={handleChange}
-      />
-      <label>Address</label>
-      <input
-        required
-        type='text'
-        name='address'
-        value={address}
-        placeholder='Enter address'
-        onChange={handleChange}
-      />
-      
-      {renderError()}
-    </form>
-  </div>
+    <Container className='signup-container'>
+        <Form onSubmit={onSignUp}>
+          <Form.Label>Sign Up</Form.Label>
+          <Form.Group>
+            <Form.Label>Username</Form.Label>
+            <Form.Control
+              required
+              type='text'
+              name='username'
+              value={username}
+              placeholder='Enter username'
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Label>Company</Form.Label>
+            <Form.Control
+              required
+              type='text'
+              name='company'
+              value={company}
+              placeholder='Enter company'
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
+              required
+              type='email'
+              name='email'
+              value={email}
+              placeholder='Enter email'
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              required
+              name='password'
+              value={password}
+              type='password'
+              placeholder='Password'
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Label>Password Confirmation</Form.Label>
+            <Form.Control
+              required
+              name='passwordConfirmation'
+              value={passwordConfirmation}
+              type='password'
+              placeholder='Confirm Password'
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Label>Address</Form.Label>
+            <Form.Control
+              required
+              type='text'
+              name='address'
+              value={address}
+              placeholder='Enter address'
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          
+          {renderError()}
+        </Form>
+      </Container>
+
   </Layout>
 )
 }
