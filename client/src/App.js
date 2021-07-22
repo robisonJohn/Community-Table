@@ -10,6 +10,7 @@ import ItemEdit from "./screens/ItemEdit/ItemEdit";
 import { verifyUser } from "./services/users"
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 const [user, setUser] = useState(null)
