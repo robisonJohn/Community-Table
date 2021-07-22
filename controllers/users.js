@@ -43,9 +43,11 @@ export const signUp = async (req, res) => {
 export const logIn = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log(req.body);
     const user = await User.findOne({ email: email }).select(
       "username email password_digest"
     );
+    console.log(user);
     if (await bcrypt.compare(password, user.password_digest)) {
       const payload = {
         id: user._id,

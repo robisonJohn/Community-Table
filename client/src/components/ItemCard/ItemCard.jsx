@@ -9,7 +9,7 @@ const ItemCard = (props) => {
           className="item-card-image"
           src={props.imgURL}
           alt={props.name}
-          width="60"
+          width="10"
         />
         <div>PLACEHOLDER</div>
       </Link>
