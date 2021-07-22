@@ -43,7 +43,7 @@ const ItemEdit = (props) => {
   }
 
   return (
-    <Layout>
+    <Layout  user={props.user}>
       <div className="item-edit">
         <div className="image-container">
           <img className="edit-item-image" src={item.imgURL} alt={item.name} />

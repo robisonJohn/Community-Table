@@ -33,7 +33,7 @@ const AddItem = (props) => {
     return <Redirect to={'/items'} />
   }
   return(
-    <Layout >
+    <Layout  user={props.user}>
       <from className='create-form' onSubmit={handleSubmit}>
       <input
           className='input-name'
