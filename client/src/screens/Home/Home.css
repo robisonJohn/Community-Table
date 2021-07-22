@@ -32,21 +32,31 @@ body {
   height: 30px;
   width: 100px;
   font-size: 15px;
+  background-color: #FAB73D;
+  border: none;
+  border-radius: 2px;
 }
 
 .category-box{
   display: flex;
   width: 80vw;
-  height: 50vh;
+  height: 300px;
   justify-content: space-between;
 }
-
+ .txt-category{
+  font-size: 40px;
+  color: white;
+  display: flex;
+ }
 
 .produce{
-  background-image: url("https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg");
+  background-image: url(https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg);
   background-size: cover;
   display: flex;
   width: 38vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dry-goods{
@@ -54,4 +64,7 @@ body {
   background-size: cover;
   display: flex;
   width: 38vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
