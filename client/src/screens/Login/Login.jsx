@@ -44,12 +44,12 @@ const Login = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <Button type="submit" className={toggleForm}>
+        <Button type="submit" className="form-element">
           {form.errorMsg}
         </Button>
       );
     } else {
-      return <Button type="submit">Login</Button>;
+      return <Button type="submit" className="form-element">Login</Button>;
     }
   };
 
@@ -57,11 +57,11 @@ const Login = (props) => {
   return (
     <Layout>
       <Container className="login-container">
-        <h1>TAKE A SEAT</h1>
-        <Form>
+        <div id="login-header"><h1>TAKE A SEAT</h1></div>
+        
+        <Form id="login-form">
           <Form.Label>Login</Form.Label>
-          <Form.Group>
-            <Form.Label>Email</Form.Label>
+          <Form.Group className="form-element">
             <Form.Control 
             required
             type="email"
@@ -71,8 +71,7 @@ const Login = (props) => {
             onChange={handleChange}/>
           </Form.Group>   
 
-          <Form.Group>
-            <Form.Label>Password</Form.Label>
+          <Form.Group className="form-element">
             <Form.Control 
             required
             type="password"
