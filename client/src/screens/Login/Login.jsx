@@ -57,6 +57,7 @@ const Login = (props) => {
   return (
     <Layout>
       <Container className="login-container">
+        <h1>TAKE A SEAT</h1>
         <Form>
           <Form.Label>Login</Form.Label>
           <Form.Group>
