@@ -23,7 +23,7 @@ if (!isLoaded) {
 }
 
 return(
-<Layout>
+<Layout  user={props.user}>
   <div className="item-detail">
     <img
     className="item-image"

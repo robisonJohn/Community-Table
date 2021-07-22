@@ -16,7 +16,7 @@ const Items = (props) => {
   }, [])
 
   return(
-<Layout>
+<Layout  user={props.user}>
 <div className="items">
 {items.map((item, index) => {
           return (
