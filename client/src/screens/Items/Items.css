@@ -1,6 +1,13 @@
 .Items {
-  padding-top: 150px;
+  padding-top: 4.5rem;
   background-color: #fafaf2;
+}
+#inventory-header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #546747;
+  text-transform: uppercase;
 }
 
 .items-container {
