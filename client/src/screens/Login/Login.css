@@ -1,6 +1,9 @@
 html, .login-container, body {
   background-color: #FAFAF2;
 }
+body {
+  background: #FAFAF2 !important;
+}
 
 .login-container{
   margin-top: 200px;
