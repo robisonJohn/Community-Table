@@ -7,7 +7,7 @@ const Home = (props) => {
       <div className="home">
         <div className="main-img">
           <h3> BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE AT A TIME</h3>
-          <button>Sign Up</button>
+          <button className="sign-up-main">Sign Up</button>
         </div>
 
         <section>
