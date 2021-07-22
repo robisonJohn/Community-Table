@@ -1,14 +1,20 @@
+html, .login-container, body {
+  background-color: #FAFAF2;
+}
+
 .login-container{
   margin-top: 200px;
   display: grid;
   justify-content: center;
+  width: 100vw;
+  
 }
 
 #login-form {
   border: 3px solid #546747;
   border-radius: 2%;
   padding: 20px;
-  width: 600px;
+  width: 500px;
 }
 
 #login-header {
@@ -18,4 +24,12 @@
 
 .form-element {
   margin: 10px;
+}
+
+.login-row {
+  margin: 100px;
+}
+
+#header-text {
+  font-size: 25px;
 }
