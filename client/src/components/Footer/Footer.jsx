@@ -4,9 +4,7 @@ function Footer() {
   return (
     <div className="Footer">
       <div id="copy-right">
-        <h5>
-          Copyright © <span>The-Coolest-Devs.</span> All Rights Reserved
-        </h5>
+        Copyright © <span>The-Coolest-Devs.</span> All Rights Reserved
       </div>
       <div id="github-logo">
         <a
