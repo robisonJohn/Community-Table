@@ -52,12 +52,12 @@ const renderError = () => {
   const toggleForm = form.isError ? 'danger' : ''
   if (form.isError) {
     return (
-      <Button type='submit' className={toggleForm}>
+      <Button type='submit' id="signup-button">
         {form.errorMsg}
       </Button>
     )
   } else {
-    return <Button type='submit'>SIGN UP</Button>
+    return <Button type='submit' id="signup-button">SIGN UP</Button>
   }
 }
 
@@ -66,18 +66,18 @@ const { username, company, email, password, passwordConfirmation, address } = fo
 return (
   <Layout>
     <Container className='signup-container'>
-      <h1>COME JOIN THE TABLE</h1>
+      <div id="signup-header"><h1>COME JOIN THE TABLE</h1></div>
         <Form onSubmit={onSignUp} className="signup-form">
-          <Form.Label>Sign Up</Form.Label>
           <Form.Group>
             <Form.Control
               required
               type='text'
               name='username'
               value={username}
-              placeholder='Enter username'
+              placeholder='Username'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -87,9 +87,10 @@ return (
               type='text'
               name='company'
               value={company}
-              placeholder='Enter company'
+              placeholder='Company Name'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -99,9 +100,10 @@ return (
               type='email'
               name='email'
               value={email}
-              placeholder='Enter email'
+              placeholder='Email'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -114,6 +116,7 @@ return (
               placeholder='Password'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -135,7 +138,7 @@ return (
               type='text'
               name='address'
               value={address}
-              placeholder='Enter address'
+              placeholder='Address'
               onChange={handleChange}
               className="sign-input"
             />
