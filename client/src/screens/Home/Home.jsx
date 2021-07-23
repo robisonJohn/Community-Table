@@ -3,12 +3,15 @@ import { Layout } from "../../components";
 
 const Home = (props) => {
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="home">
         <div className="main-img">
           <div className="main-txt">
-          <h3> BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE  <br/>  AT A TIME</h3>
-          <button className="sign-up-button">SIGN UP</button>
+            <h3>
+              {" "}
+              BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE <br /> AT A TIME
+            </h3>
+            <button className="sign-up-button">SIGN UP</button>
           </div>
         </div>
 
