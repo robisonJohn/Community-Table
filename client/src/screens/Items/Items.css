@@ -1,0 +1,30 @@
+.Items {
+  padding-top: 4.5rem;
+  background-color: #fafaf2;
+}
+#inventory-header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #546747;
+  text-transform: uppercase;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+  padding-top: 5rem;
+}
+
+.layout-children {
+  flex: 2;
+  padding: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout-children {
+    padding: 0px;
+  }
+}
