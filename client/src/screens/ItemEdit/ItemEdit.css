@@ -9,9 +9,13 @@
 .edit-item-image {
   display: flex;
   background-size: cover;
+  min-height: 295px;
+  max-height: 295px;
+  min-width: 300px;
+  max-width: 300px;
 }
 
-/* .item-edit{
+form {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -19,6 +23,7 @@
   margin: 5px 20px 20px 20px;
 }
 
+/* 
 .name {
   font-size: 25px;
   font-weight: 700;
