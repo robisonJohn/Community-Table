@@ -10,11 +10,11 @@ h1 {
 }
 
 .create-form {
-  border: 5px solid #2b331f;
+  border: 5px solid #546747;
   border-radius: 1%;
   padding: 10px;
   margin-top: 100px;
-  height: 400px;
+  height: 450px;
   width: 600px;
 }
 
@@ -24,8 +24,19 @@ h1 {
 }
 
 .add-input {
-  margin: 10px;
+  margin: 20px;
   width: 400px !important;
   margin-left: 80px;
+  background-color:#fddca5 !important;
 }
+
+.submit-button {
+  background-color: #546747 !important;
+  font-size: 20px !important;
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 330px;
+}
+
+
 
