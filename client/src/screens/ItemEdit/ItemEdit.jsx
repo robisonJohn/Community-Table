@@ -45,8 +45,8 @@ const ItemEdit = (props) => {
   return (
     <Layout  user={props.user}>
       <div className="item-edit">
-        <div className="image-container">
           <img className="edit-item-image" src={item.imgURL} alt={item.name} />
+          <div className="detail">
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image"
@@ -57,7 +57,6 @@ const ItemEdit = (props) => {
               onChange={handleChange}
             />
           </form>
-        </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
             className="category"
@@ -83,11 +82,12 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
+        </form>
+        </div>
+      </div>
           <button type="submit" className="save-button">
             Change
           </button>
-        </form>
-      </div>
     </Layout>
   );
 };
