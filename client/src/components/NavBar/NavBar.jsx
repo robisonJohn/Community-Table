@@ -45,7 +45,7 @@ const NavBar = ({ user }) => {
         <div className="links">
           {user && (
             <div className="link welcome">
-              Welcome, {user.username} from {user.company}
+              Welcome, {user.username} from {user.company_name}
             </div>
           )}
           {alwaysOptions}
