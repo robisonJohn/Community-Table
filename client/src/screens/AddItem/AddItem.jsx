@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Layout } from "../../components"
 import { Redirect } from "react-router-dom"
 import { createItem  } from "../../services/items"
-import "./AddItem.css"
+import "./AddItem.css";
+import { Form, Button, Container } from 'react-bootstrap';
 
 const AddItem = (props) => {
   const [item, setItem] = useState({
@@ -34,52 +35,75 @@ const AddItem = (props) => {
   }
   return(
     <Layout  user={props.user}>
-      <form className='create-form' onSubmit={handleSubmit}>
-      <input
-          className='input-name'
-          placeholder='Name'
-          value={item.name}
-          name='name'
-          required
-          autoFocus
-          onChange={handleChange}
-        />
-        <input
-          className='input-category'
-          placeholder='Category'
-          value={item.category}
-          name='category'
-          required
-          onChange={handleChange}
-        />
-        <textarea
-          className='textarea-benefits'
-          placeholder='Benefits'
-          value={item.benefits}
-          name='benefits'
-          required
-          onChange={handleChange}
-        />
-        <input
-          className='input-image-link'
-          placeholder='Image Link'
-          value={item.imgURL}
-          name='imgURL'
-          required
-          onChange={handleChange}
-        />
-         <input
-          className='input-quantity'
-          placeholder='Quantity'
-          value={item.quantity}
-          name='quantity'
-          required
-          onChange={handleChange}
-        />
-        <button type='submit' className='submit-button'>
-          Add Item
-        </button>
-      </form>
+      <div id="add-item-header">
+        <h1>ADD TO TABLE INVENTORY</h1>
+      </div>
+      <Container className="form-container">
+        <Form className='create-form' onSubmit={handleSubmit}>
+          <Form.Group>
+            <Form.Control
+              type="text"
+              className='add-input'
+              placeholder='Name'
+              value={item.name}
+              name='name'
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              className='add-input'
+              placeholder='Category'
+              value={item.category}
+              name='category'
+              required
+              onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              className='add-input'
+              placeholder='Benefits'
+              value={item.benefits}
+              name='benefits'
+              required
+              onChange={handleChange}
+            />        
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              type="text"
+              className='add-input'
+              placeholder='Image Link'
+              value={item.imgURL}
+              name='imgURL'
+              required
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Control 
+              type="text"
+              className='add-input'
+              placeholder='Quantity'
+              value={item.quantity}
+              name='quantity'
+              required
+              onChange={handleChange}
+            />
+          </Form.Group>
+
+          <Button type='submit' className='submit-button'>
+            Add Item
+          </Button>
+        </Form>
+      </Container>
+
     </Layout>
   )
 }
