@@ -24,6 +24,7 @@ if (!isLoaded) {
 
 return(
 <Layout  user={props.user}>
+<h2 id="Detail-header">Details</h2>
   <div className="item-detail">
     <img
     className="item-image"
