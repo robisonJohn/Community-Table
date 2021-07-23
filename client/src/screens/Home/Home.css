@@ -97,7 +97,7 @@
     display: flex;
     width: 100vw;
     height: 400px;
-    margin: 120px auto 10px auto;
+    margin: 120px auto 0 auto;
     flex-direction: column;
   }
   
@@ -129,11 +129,13 @@
   }
   
   .category-box{
+    width: 100vw;
+    height: 200px;
     display: flex;
-    width: 80vw;
-    height: 300px;
-    justify-content: space-between;
-    margin:0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
    .txt-category{
     font-family: 'Roboto', sans-serif;
@@ -146,9 +148,9 @@
     background-image: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50) ), url(https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg);
     background-size: cover;
     display: flex;
-    width: 38vw;
+    width: 95vw;
+    height: 10vh;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   
@@ -156,12 +158,16 @@
     background-image: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50) ), url("https://c4.wallpaperflare.com/wallpaper/907/539/595/cereal-food-bread-noodles-wheat-hd-wallpaper-thumb.jpg");
     background-size: cover;
     display: flex;
-    width: 38vw;
+    width: 95vw;
+    height: 10vh;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
+  .Layout {
+    height: 97vh; 
+    display: flex;
+    flex-direction: column;}
 
 
 }
