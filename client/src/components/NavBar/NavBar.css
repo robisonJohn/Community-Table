@@ -16,6 +16,7 @@ nav {
   margin-top: -2px;
   box-shadow: 1px 1px 1px 0.3px #cecece;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 #logo {
@@ -43,11 +44,11 @@ nav {
 }
 
 #welcome {
-  margin-bottom: 2rem;
-  margin-right: -25rem;
+  margin-bottom: 2.25rem;
+  margin-right: -30rem;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: x-large;
+  font-size: 1.85rem;
   font-style: italic;
   color: #2b331f;
 }
