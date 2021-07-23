@@ -3,7 +3,7 @@
   display: flex;
   background-color: white;
   margin: 100px auto 0 auto;
-  width: 1000px;
+  width: 70vw;
 }
 
 .edit-item-image {
@@ -15,25 +15,37 @@
   max-width: 300px;
 }
 
-form {
+.edit-form {
+  width: 90%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 5px 20px 20px 20px;
+  align-items: stretch;
 }
 
+.e-detail{
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 0 ;
+}
+
+.e-input{
+  margin: 5px 0;
+}
+
+.e-label{
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+}
 /* 
 .name {
   font-size: 25px;
   font-weight: 700;
 }
 
-.category {
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: -20px;
-}
+
 
 .benefits {
   width: 40vw;
