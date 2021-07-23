@@ -1,46 +1,78 @@
-.item-detail{
-  font-family: 'Roboto', sans-serif;
+.item-detail {
+  font-family: "Roboto", sans-serif;
   display: flex;
   background-color: white;
   margin: 100px auto 0 auto;
-  width: 75vw;
+  width: 1000px;
 }
 
-.item-image{
+.item-image {
   display: flex;
   background-size: cover;
 }
 
-.detail{
-  font-family: 'Roboto', sans-serif;
+.detail {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 5px 20px;
+  margin: 5px 20px 20px 20px;
 }
 
-.name{
-font-size: 25px;
-font-weight: 700;
+.name {
+  font-size: 25px;
+  font-weight: 700;
 }
 
-.category{
-font-size: 15px;
-font-weight: 300;
-margin-top: -90px;
+.category {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: -20px;
 }
 
-.benefits{
+.benefits {
   width: 40vw;
-  margin-top: -60px;
+  margin-top: -5px;
 }
 
 .quantity {
   display: flex;
   font-size: 15px;
+  width: 110%;
+  align-items: baseline;
+  justify-content: flex-end;
+  height: 20px;
 }
 
-.quantity h4{
+.quantity h4 {
   font-size: 15px;
   font-weight: 700;
-  }
+  margin-right: 3px;
+}
+
+.box{
+  font-weight: 700;
+  display: flex;
+  font-size: 15px;
+  width: 110%;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-top: -20px;
+  padding: 0 10px;
+}
+
+.button-container{
+  display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin: 10px 0 0 580px;
+}
+
+button{
+  font-weight: 500;
+  font-size: 5px;
+  background-color: #546747;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
