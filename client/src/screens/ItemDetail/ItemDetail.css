@@ -38,7 +38,7 @@
 .quantity {
   display: flex;
   font-size: 15px;
-  width: 49vw;
+  width: 110%;
   align-items: baseline;
   justify-content: flex-end;
   height: 20px;
@@ -54,9 +54,25 @@
   font-weight: 700;
   display: flex;
   font-size: 15px;
-  width: 49vw;
+  width: 110%;
   align-items: baseline;
   justify-content: flex-end;
   margin-top: -20px;
   padding: 0 10px;
+}
+
+.button-container{
+  display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin: 10px 0 0 580px;
+}
+
+button{
+  font-weight: 500;
+  font-size: 5px;
+  background-color: #546747;
+  color: white;
+  border: none;
+  border-radius: 2px;
 }

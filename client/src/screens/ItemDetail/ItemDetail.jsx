@@ -40,14 +40,17 @@ return(
   </div>   
   </div>
       <div className='button-container'>
+           <Link className='back-button' to={`/inventory`}>
+             <button> GO BACK </button>
+            </Link>
             <Link className='edit-button' to={`/items/${item._id}/edit`}>
-              Edit
+             <button> UPDATE TABLE </button>
             </Link>
             <button
               className='delete-button'
               onClick={() => deleteItem(item._id)}
             >
-              Delete
+              DELETE ITEM
             </button>
    </div>
 </Layout>
