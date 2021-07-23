@@ -10,6 +10,7 @@ function Footer() {
         <a
           href="https://github.com/robisonJohn/Community-Table/tree/main"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
