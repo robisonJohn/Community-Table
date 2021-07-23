@@ -64,7 +64,7 @@ const Login = (props) => {
           </Row>
           <Row className="login-row">
             <Form id="login-form" onSubmit={onLogin}>
-            <p>Don't have an account? Sign up here!</p>
+            <p id="login-signup">Don't have an account? Sign up here!</p>
             <Form.Group className="form-element">
               <Form.Control 
               required
@@ -74,6 +74,7 @@ const Login = (props) => {
               value={email}
               onChange={handleChange}
               className="form-input"
+              id="email-input"
               />
             </Form.Group>   
 
@@ -86,6 +87,7 @@ const Login = (props) => {
               value={password}
               onChange={handleChange}
               className="form-input"
+              id="password-input"
               />    
             </Form.Group>
               {renderError()}

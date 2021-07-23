@@ -66,9 +66,8 @@ const { username, company, email, password, passwordConfirmation, address } = fo
 return (
   <Layout>
     <Container className='signup-container'>
-      <h1>COME JOIN THE TABLE</h1>
+      <div id="signup-header"><h1>COME JOIN THE TABLE</h1></div>
         <Form onSubmit={onSignUp} className="signup-form">
-          <Form.Label>Sign Up</Form.Label>
           <Form.Group>
             <Form.Control
               required
@@ -78,6 +77,7 @@ return (
               placeholder='Enter username'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -90,6 +90,7 @@ return (
               placeholder='Enter company'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -102,6 +103,7 @@ return (
               placeholder='Enter email'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
@@ -114,6 +116,7 @@ return (
               placeholder='Password'
               onChange={handleChange}
               className="sign-input"
+              
             />
           </Form.Group>
 
