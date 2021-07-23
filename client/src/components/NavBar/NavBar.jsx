@@ -38,7 +38,7 @@ const NavBar = ({ user }) => {
           <img
             src="https://i.imgur.com/cyWp9Px.png"
             id="companylogo"
-            width="275"
+            width="350"
             alt="company logo"
           />
         </NavLink>
