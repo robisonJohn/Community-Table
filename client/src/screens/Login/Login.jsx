@@ -63,7 +63,7 @@ const Login = (props) => {
             <div id="login-header"><h1 id="header-text">TAKE A SEAT</h1></div>
           </Row>
           <Row className="login-row">
-            <Form id="login-form">
+            <Form id="login-form" onSubmit={onLogin}>
             <p>Don't have an account? Sign up here!</p>
             <Form.Group className="form-element">
               <Form.Control 
@@ -89,7 +89,6 @@ const Login = (props) => {
               />    
             </Form.Group>
               {renderError()}
-              <p>Forgot password...</p>
           </Form>
           </Row>
         </Col>
