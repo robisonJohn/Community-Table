@@ -70,7 +70,6 @@ return (
         <Form onSubmit={onSignUp} className="signup-form">
           <Form.Label>Sign Up</Form.Label>
           <Form.Group>
-            <Form.Label>Username</Form.Label>
             <Form.Control
               required
               type='text'
@@ -83,7 +82,6 @@ return (
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Company</Form.Label>
             <Form.Control
               required
               type='text'
@@ -96,7 +94,6 @@ return (
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Email address</Form.Label>
             <Form.Control
               required
               type='email'
@@ -109,7 +106,6 @@ return (
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Password</Form.Label>
             <Form.Control
               required
               name='password'
@@ -122,7 +118,6 @@ return (
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Password Confirmation</Form.Label>
             <Form.Control
               required
               name='passwordConfirmation'
@@ -135,7 +130,6 @@ return (
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Address</Form.Label>
             <Form.Control
               required
               type='text'
@@ -146,8 +140,6 @@ return (
               className="sign-input"
             />
           </Form.Group>
-
-          
           {renderError()}
         </Form>
       </Container>
