@@ -1,3 +1,31 @@
 .create-form{
   margin-top: 400px;
 }
+h1 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #546747;
+  text-transform: uppercase;
+}
+
+.create-form {
+  border: 5px solid #2b331f;
+  border-radius: 1%;
+  padding: 10px;
+  margin-top: 100px;
+  height: 400px;
+  width: 600px;
+}
+
+.form-container {
+  display: grid;
+  justify-content: center;
+}
+
+.add-input {
+  margin: 10px;
+  width: 400px !important;
+  margin-left: 80px;
+}
+
