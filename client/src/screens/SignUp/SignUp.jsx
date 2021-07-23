@@ -74,7 +74,7 @@ return (
               type='text'
               name='username'
               value={username}
-              placeholder='Enter username'
+              placeholder='Username'
               onChange={handleChange}
               className="sign-input"
               
@@ -87,7 +87,7 @@ return (
               type='text'
               name='company'
               value={company}
-              placeholder='Enter company'
+              placeholder='Company Name'
               onChange={handleChange}
               className="sign-input"
               
@@ -100,7 +100,7 @@ return (
               type='email'
               name='email'
               value={email}
-              placeholder='Enter email'
+              placeholder='Email'
               onChange={handleChange}
               className="sign-input"
               
@@ -138,7 +138,7 @@ return (
               type='text'
               name='address'
               value={address}
-              placeholder='Enter address'
+              placeholder='Address'
               onChange={handleChange}
               className="sign-input"
             />
