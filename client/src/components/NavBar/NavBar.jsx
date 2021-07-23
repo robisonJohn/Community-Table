@@ -3,10 +3,10 @@ import "./NavBar.css";
 
 const authenticatedOptions = (
   <>
-    <NavLink className="link" to="/add-item">
+    <NavLink className="link " to="/add-item">
       Add to Table
     </NavLink>
-    <NavLink className="link" to="/logout">
+    <NavLink className="link " to="/logout">
       Logout
     </NavLink>
   </>
@@ -43,11 +43,7 @@ const NavBar = ({ user }) => {
           />
         </NavLink>
         <div className="links">
-          {user && (
-            <div className="link welcome">
-              Welcome, {user.username} from {user.company_name}
-            </div>
-          )}
+          {user && <div id="welcome">Hello, {user.username}!</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>

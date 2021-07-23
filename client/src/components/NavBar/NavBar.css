@@ -20,3 +20,30 @@ nav {
 #logo {
   max-width: 30vw;
 }
+
+.links {
+  display: flex;
+  flex: 2;
+  max-width: 70vw;
+  align-items: center;
+  font-size: 1.25rem;
+  justify-content: flex-end;
+}
+
+.link {
+  text-decoration: none;
+  color: #262d1e;
+  padding: 1rem;
+  margin-top: 3.5rem;
+  text-transform: uppercase;
+}
+
+#welcome {
+  margin-bottom: 2rem;
+  margin-right: -25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: x-large;
+  font-style: italic;
+  color: #2b331f;
+}
