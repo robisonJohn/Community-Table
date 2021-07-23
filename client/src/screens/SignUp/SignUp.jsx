@@ -57,7 +57,7 @@ const renderError = () => {
       </Button>
     )
   } else {
-    return <Button type='submit'>Sign Up</Button>
+    return <Button type='submit'>SIGN UP</Button>
   }
 }
 
@@ -66,7 +66,8 @@ const { username, company, email, password, passwordConfirmation, address } = fo
 return (
   <Layout>
     <Container className='signup-container'>
-        <Form onSubmit={onSignUp}>
+      <h1>COME JOIN THE TABLE</h1>
+        <Form onSubmit={onSignUp} className="signup-form">
           <Form.Label>Sign Up</Form.Label>
           <Form.Group>
             <Form.Label>Username</Form.Label>
@@ -77,6 +78,7 @@ return (
               value={username}
               placeholder='Enter username'
               onChange={handleChange}
+              className="sign-input"
             />
           </Form.Group>
 
@@ -89,6 +91,7 @@ return (
               value={company}
               placeholder='Enter company'
               onChange={handleChange}
+              className="sign-input"
             />
           </Form.Group>
 
@@ -101,6 +104,7 @@ return (
               value={email}
               placeholder='Enter email'
               onChange={handleChange}
+              className="sign-input"
             />
           </Form.Group>
 
@@ -113,6 +117,7 @@ return (
               type='password'
               placeholder='Password'
               onChange={handleChange}
+              className="sign-input"
             />
           </Form.Group>
 
@@ -125,6 +130,7 @@ return (
               type='password'
               placeholder='Confirm Password'
               onChange={handleChange}
+              className="sign-input"
             />
           </Form.Group>
 
@@ -137,6 +143,7 @@ return (
               value={address}
               placeholder='Enter address'
               onChange={handleChange}
+              className="sign-input"
             />
           </Form.Group>
 

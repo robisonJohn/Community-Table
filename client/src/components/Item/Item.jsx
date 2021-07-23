@@ -6,10 +6,13 @@ const Item = (props) => {
   return (
     <>
       <Link className="Item" to={`/items/${props._id}`}>
-        <img src={props.imgURL} alt={props.name} className="item-image" />
-        <div className="item-name">{props.name}</div>
-        <div className="item-category">{props.category}</div>
-        <div className="item-benefits">{props.benefits}</div>
+        <div className="item-image-container">
+          <img src={props.imgURL} alt={props.name} className="item-image" />
+        </div>
+        <div className="item-details">
+          <div className="item-name">{props.name}</div>
+          <div className="item-category">{props.category}</div>
+        </div>
       </Link>
     </>
   );
