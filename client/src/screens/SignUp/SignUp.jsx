@@ -52,12 +52,12 @@ const renderError = () => {
   const toggleForm = form.isError ? 'danger' : ''
   if (form.isError) {
     return (
-      <Button type='submit' className={toggleForm}>
+      <Button type='submit' id="signup-button">
         {form.errorMsg}
       </Button>
     )
   } else {
-    return <Button type='submit'>SIGN UP</Button>
+    return <Button type='submit' id="signup-button">SIGN UP</Button>
   }
 }
 

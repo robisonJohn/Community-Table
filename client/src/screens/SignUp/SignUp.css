@@ -9,13 +9,17 @@
   border-radius: 2%;
   width: 600px;
   padding: 20px;
+
+  
 }
 
 .sign-input {
   background-color: #fddca5 !important;
   margin: 20px;
   padding: 10px;
-  width: 500px !important;
+  width: 450px !important;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
 #signup-header {
@@ -24,4 +28,12 @@
 }
 h1 {
   font-size: 25px !important;
+}
+
+#signup-button {
+  background-color:#2b331f !important;
+  font-size: 20px;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 352px;
 }
