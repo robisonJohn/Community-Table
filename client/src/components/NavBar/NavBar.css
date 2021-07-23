@@ -13,7 +13,7 @@ nav {
   padding-bottom: 1px;
   margin-left: -2px;
   margin-right: -2px;
-  margin-top: -2px;
+  margin-top: -10px;
   box-shadow: 1px 1px 1px 0.3px #cecece;
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -29,9 +29,9 @@ nav {
 .links {
   display: flex;
   flex: 2;
-  max-width: 64.5vw;
+  max-width: 69vw;
   align-items: center;
-  font-size: 1.55rem;
+  font-size: 1.4rem;
   justify-content: flex-end;
 }
 
@@ -39,7 +39,7 @@ nav {
   text-decoration: none;
   color: #262d1e;
   padding: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 2.25rem;
   text-transform: uppercase;
 }
 

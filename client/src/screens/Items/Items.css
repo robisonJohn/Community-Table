@@ -1,5 +1,5 @@
 .Items {
-  padding-top: 6.5rem;
+  padding-top: 5rem;
   background-color: #fafaf2;
 }
 #inventory-header {
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
-  padding-top: 5rem;
+  margin-top: 4rem;
 }
 
 .layout-children {
