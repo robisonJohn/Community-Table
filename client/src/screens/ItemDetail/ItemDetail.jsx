@@ -34,7 +34,9 @@ return(
       <div className="name">{item.name}</div>
       <div className="category">{item.category}</div>
       <div className="benefits">{item.benefits}</div>
-      <div className="quantity">{item.quantity}</div>
+      <div className="quantity"> <h4>Quantity: </h4> {item.quantity}</div>
+  </div>   
+  </div>
       <div className='button-container'>
             <Link className='edit-button' to={`/items/${item._id}/edit`}>
               Edit
@@ -45,9 +47,7 @@ return(
             >
               Delete
             </button>
-          </div>
-    </div>
-  </div>
+   </div>
 </Layout>
 
 )

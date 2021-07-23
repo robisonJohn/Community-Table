@@ -1,0 +1,46 @@
+.item-detail{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  background-color: white;
+  margin: 100px auto 0 auto;
+  width: 75vw;
+}
+
+.item-image{
+  display: flex;
+  background-size: cover;
+}
+
+.detail{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+
+.name{
+font-size: 25px;
+font-weight: 700;
+}
+
+.category{
+font-size: 15px;
+font-weight: 300;
+margin-top: -90px;
+}
+
+.benefits{
+  width: 40vw;
+  margin-top: -60px;
+}
+
+.quantity {
+  display: flex;
+  font-size: 15px;
+}
+
+.quantity h4{
+  font-size: 15px;
+  font-weight: 700;
+  }
