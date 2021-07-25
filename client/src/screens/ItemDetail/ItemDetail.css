@@ -2,8 +2,8 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   background-color: white;
-  margin: 100px auto 0 auto;
-  width: 1000px;
+  margin: 200px auto 0 auto;
+  width: 70vw;
 }
 
 .item-image {
@@ -42,6 +42,7 @@
   align-items: baseline;
   justify-content: flex-end;
   height: 20px;
+  margin-top: -50px;
 }
 
 .quantity h4 {
@@ -62,17 +63,114 @@
 }
 
 .button-container{
-  display: flex;
+    display: flex;
     justify-content: space-evenly;
     width: 40vw;
     margin: 10px 0 0 580px;
 }
 
-button{
+.d-button{
+  line-height: 1.5;
+  box-sizing: border-box;
   font-weight: 500;
-  font-size: 5px;
+  font-size: 15px;
   background-color: #546747;
   color: white;
   border: none;
   border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Layout {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;}
+ 
+  .item-detail {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: white;
+    margin: 200px auto 0 auto;
+    width: 99vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item-image {
+    min-width: 99vw;
+    min-height: 20vh;
+    display: flex;
+    background-size: cover;
+  }
+  
+  .detail {
+    width: 85vw;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 20px 20px 20px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .category {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  
+  .benefits {
+    width: 80vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .quantity {
+    display: flex;
+    font-size: 15px;
+    width: 90%;
+    align-items: baseline;
+    justify-content: flex-end;
+    height: 20px;
+    margin-top: -10px;
+  }
+  
+  .quantity h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 3px;
+  }
+  
+  .box{
+    font-weight: 700;
+    display: flex;
+    font-size: 15px;
+    width: 90%;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-top: 1px;
+  }
+  
+  .button-container{
+      display: flex;
+      justify-content: space-evenly;
+      width: 90vw;
+      margin: 5px auto;
+  }
+  
+  .d-button{
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #546747;
+    color: white;
+    border: none;
+    border-radius: 2px;
+  }
 }

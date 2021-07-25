@@ -2,8 +2,8 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   background-color: white;
-  margin: 100px auto 0 auto;
-  width: 1000px;
+  margin: 200px auto 0 auto;
+  width: 70vw;
 }
 
 .edit-item-image {
@@ -15,69 +15,118 @@
   max-width: 300px;
 }
 
-form {
+.edit-form {
+  width: 90%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 5px 20px 20px 20px;
+  align-items: stretch;
 }
 
-/* 
-.name {
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.category {
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: -20px;
-}
-
-.benefits {
-  width: 40vw;
-  margin-top: -5px;
-}
-
-.quantity {
+.e-detail{
+  width: 90%;
+  font-family: "Roboto", sans-serif;
   display: flex;
-  font-size: 15px;
-  width: 110%;
-  align-items: baseline;
+  flex-direction: column;
+  margin: 5px 20px 0 ;
+}
+
+.e-input{
+  margin-bottom: 10px;
+}
+
+.e-label{
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+.e-button-container{
+  display: flex;
   justify-content: flex-end;
-  height: 20px;
+  width: 70vw;
+  margin: 10px auto;
 }
 
-.quantity h4 {
-  font-size: 15px;
-  font-weight: 700;
-  margin-right: 3px;
+.e-button{
+line-height: 1.5;
+box-sizing: border-box;
+font-weight: 500;
+font-size: 15px;
+background-color: #546747;
+color: white;
+border: none;
+border-radius: 2px;
 }
 
-.box{
-  font-weight: 700;
-  display: flex;
-  font-size: 15px;
-  width: 110%;
-  align-items: baseline;
-  justify-content: flex-end;
-  margin-top: -20px;
-  padding: 0 10px;
-}
+@media only screen and (max-width: 600px) {
 
-.button-container{
-  display: flex;
-    justify-content: space-evenly;
-    width: 40vw;
-    margin: 10px 0 0 580px;
-}
+  .Layout {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;}
 
-button{
-  font-weight: 500;
-  font-size: 5px;
-  background-color: #546747;
-  color: white;
-  border: none;
-  border-radius: 2px;
-} */
+  .item-edit {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: white;
+    margin: 200px auto 0 auto;
+    width: 99vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edit-item-image {
+    min-width: 99vw;
+    min-height: 20vh;
+    display: flex;
+    background-size: cover;
+  }
+  
+  .edit-form {
+    width: 95%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .e-detail{
+    width: 95%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px 0 ;
+  }
+  
+  .e-input{
+    margin-bottom: 10px;
+  }
+  
+  .e-label{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+  }
+  
+  .e-button-container{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    margin: 10px auto;
+  }
+  
+  .e-button{
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #546747;
+    color: white;
+    border: none;
+    border-radius: 2px;
+  }
+
+
+
+
+
+}
