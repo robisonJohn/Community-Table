@@ -35,8 +35,8 @@ return(
       <div className="name">{item.name}</div>
       <div className="category">{item.category}</div>
       <div className="benefits">{item.benefits}</div>
-      <div className="quantity"> <h4>Quantity: </h4> {item.quantity}</div>
       <div className="box"><p>1 = 1<img src="https://cdn.iconscout.com/icon/free/png-256/box-package-parcel-logistic-delivery-unpack-open-shipping-3-20450.png" alt="box" width="20"/> </p> </div>
+      <div className="quantity"> <h4>Quantity: </h4> {item.quantity}</div>
   </div>   
   </div>
       <div className='button-container'>
