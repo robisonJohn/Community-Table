@@ -61,6 +61,7 @@ body {
   text-align: center;
   color: #546747;
   text-transform: uppercase;
+  font-weight: 350;
 }
 
 .form-input {
@@ -68,7 +69,8 @@ body {
   font-size: 20px !important;
 }
 #error-button {
-  font-size: 20px;
+  font-size: 12px;
+  text-align: center;
   width: 100px;
   margin-top: 30px;
   margin-left: 345px;

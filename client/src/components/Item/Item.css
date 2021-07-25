@@ -42,3 +42,33 @@
   text-transform: lowercase;
   color: #546747;
 }
+
+@media only screen and (max-width: 1024px) {
+  .item-name {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  .item-category {
+    font-weight: 350;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .item-name {
+    font-size: 1.75rem;
+  }
+  .item-category {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .item-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .item-category {
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+}

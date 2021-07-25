@@ -44,11 +44,60 @@ nav {
 }
 
 #welcome {
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.5rem;
   margin-right: -30rem;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: #2b331f;
+}
+@media only screen and (max-width: 1024px) {
+  #companylogo {
+    margin-left: 1.5rem;
+    width: 35vw;
+  }
+  .links {
+    font-size: 1.4rem;
+    max-width: 60vw;
+    margin-top: 2.5rem;
+  }
+  #welcome {
+    margin-right: -28rem;
+    margin-bottom: 4.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #companylogo {
+    margin-left: 1.25rem;
+  }
+  .links {
+    font-size: 1.1rem;
+    max-width: 57vw;
+    margin-top: 2.5rem;
+    font-weight: 400;
+  }
+  #welcome {
+    margin-right: -24rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #companylogo {
+    margin-left: 1.25rem;
+    width: 55vw;
+    margin-top: -0.245rem;
+  }
+  .links {
+    font-size: 0.85rem;
+    max-width: 57vw;
+    margin-top: 2.5rem;
+    font-weight: 400;
+  }
+  #welcome {
+    margin-right: -22rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
 }

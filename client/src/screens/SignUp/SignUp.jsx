@@ -76,8 +76,8 @@ const SignUp = (props) => {
   return (
     <Layout>
       <Container className="signup-container">
-        <div id="signup-header">
-          <h2>COME JOIN THE TABLE</h2>
+        <div>
+          <h2 id="signup-header">COME JOIN THE TABLE</h2>
         </div>
         <Form onSubmit={onSignUp} className="signup-form">
           <Form.Group>

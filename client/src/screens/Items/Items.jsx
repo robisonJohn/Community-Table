@@ -17,7 +17,7 @@ const Items = (props) => {
   return (
     <Layout user={props.user}>
       <div className="Items">
-        <h2 id="inventory-header">Table Inventory</h2>
+        <h2 className="header">Table Inventory</h2>
 
         <div className="items-container">
           {items.map((item, index) => {
