@@ -57,57 +57,76 @@ color: white;
 border: none;
 border-radius: 2px;
 }
-/* 
-.name {
-  font-size: 25px;
-  font-weight: 700;
-}t
+
+@media only screen and (max-width: 600px) {
+
+  .Layout {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;}
+
+  .item-edit {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: white;
+    margin: 200px auto 0 auto;
+    width: 99vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edit-item-image {
+    min-width: 99vw;
+    min-height: 20vh;
+    display: flex;
+    background-size: cover;
+  }
+  
+  .edit-form {
+    width: 95%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .e-detail{
+    width: 95%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px 0 ;
+  }
+  
+  .e-input{
+    margin-bottom: 10px;
+  }
+  
+  .e-label{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+  }
+  
+  .e-button-container{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    margin: 10px auto;
+  }
+  
+  .e-button{
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #546747;
+    color: white;
+    border: none;
+    border-radius: 2px;
+  }
 
 
 
-.benefits {
-  width: 40vw;
-  margin-top: -5px;
+
+
 }
-
-.quantity {
-  display: flex;
-  font-size: 15px;
-  width: 110%;
-  align-items: baseline;
-  justify-content: flex-end;
-  height: 20px;
-}
-
-.quantity h4 {
-  font-size: 15px;
-  font-weight: 700;
-  margin-right: 3px;
-}
-
-.box{
-  font-weight: 700;
-  display: flex;
-  font-size: 15px;
-  width: 110%;
-  align-items: baseline;
-  justify-content: flex-end;
-  margin-top: -20px;
-  padding: 0 10px;
-}
-
-.button-container{
-  display: flex;
-    justify-content: space-evenly;
-    width: 40vw;
-    margin: 10px 0 0 580px;
-}
-
-button{
-  font-weight: 500;
-  font-size: 5px;
-  background-color: #546747;
-  color: white;
-  border: none;
-  border-radius: 2px;
-} */
