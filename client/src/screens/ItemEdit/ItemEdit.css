@@ -2,7 +2,7 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   background-color: white;
-  margin: 100px auto 0 auto;
+  margin: 200px auto 0 auto;
   width: 70vw;
 }
 
@@ -32,18 +32,36 @@
 }
 
 .e-input{
-  margin: 5px 0;
+  margin-bottom: 10px;
 }
 
 .e-label{
   font-family: "Roboto", sans-serif;
-  font-size: 9px;
+  font-size: 10px;
+}
+
+.e-button-container{
+  display: flex;
+  justify-content: flex-end;
+  width: 70vw;
+  margin: 10px auto;
+}
+
+.e-button{
+line-height: 1.5;
+box-sizing: border-box;
+font-weight: 500;
+font-size: 15px;
+background-color: #546747;
+color: white;
+border: none;
+border-radius: 2px;
 }
 /* 
 .name {
   font-size: 25px;
   font-weight: 700;
-}
+}t
 
 
 

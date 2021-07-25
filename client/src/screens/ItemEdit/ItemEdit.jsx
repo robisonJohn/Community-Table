@@ -62,6 +62,7 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
+            <label className="e-label">Benefits</label>
             <textarea
               className="e-input"
               placeholder="Benefits"
@@ -70,6 +71,8 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
+            <div className="small-box"></div>
+            <label className="e-label">Quantity</label>
             <input
               className="e-input"
               placeholder="Quantity"
@@ -78,6 +81,7 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
+            <label className="e-label">Image</label>
             <input
               className="e-input"
               placeholder="Image Link"
@@ -89,9 +93,11 @@ const ItemEdit = (props) => {
           </form>
         </div>
       </div>
-      <button type="submit" className="save-button">
-        Change
+      <div className="e-button-container">
+      <button type="submit" className="e-button" onSubmit={handleSubmit}>
+        CHANGE
       </button>
+      </div>
     </Layout>
   );
 };
