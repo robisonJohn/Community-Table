@@ -11,7 +11,7 @@ const Home = (props) => {
               {" "}
               BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE <br /> AT A TIME
             </h3>
-            <button className="sign-up-button">SIGN UP</button>
+            <Link to="/sign-up"><button className="sign-up-button">SIGN UP</button></Link>
           </div>
         </div>
 
