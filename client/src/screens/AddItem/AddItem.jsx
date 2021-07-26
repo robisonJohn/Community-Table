@@ -12,6 +12,9 @@ const AddItem = (props) => {
     imgURL: "",
     benefits: "",
     quantity: "",
+    price: "",
+    shelfLife: "",
+    daysHeld: ""
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -93,6 +96,39 @@ const AddItem = (props) => {
               placeholder="Quantity"
               value={item.quantity}
               name="quantity"
+              required
+              onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control 
+              type="text"
+              className='add-input'
+              placeholder='Price'
+              value={item.price}
+              name='price'
+              required
+              onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control 
+              type="text"
+              className='add-input'
+              placeholder='Shelf Life'
+              value={item.shelfLife}
+              name='shelfLife'
+              required
+              onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control 
+              type="text"
+              className='add-input'
+              placeholder='Days Held'
+              value={item.daysHeld}
+              name='daysHeld'
               required
               onChange={handleChange}
             />
