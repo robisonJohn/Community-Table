@@ -44,13 +44,13 @@ nav {
 }
 
 #welcome {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.7rem;
   margin-right: -33rem;
   text-transform: uppercase;
   font-weight: 450;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: italic;
-  color: #2b331f;
+  color: #556747;
 }
 #welcome span {
   font-weight: 400;
