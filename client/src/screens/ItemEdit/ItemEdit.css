@@ -3,7 +3,7 @@
   display: flex;
   background-color: white;
   margin: 200px auto 0 auto;
-  width: 70vw;
+  width: 90vw;
 }
 
 .edit-item-image {
@@ -16,7 +16,7 @@
 }
 
 .edit-form {
-  width: 90%;
+  width: 70%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .e-detail{
-  width: 90%;
+  width: 70%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -42,8 +42,6 @@
 
 .e-button-container{
   display: flex;
-  justify-content: flex-end;
-  width: 70vw;
   margin: 10px auto;
 }
 
@@ -58,16 +56,77 @@ border: none;
 border-radius: 2px;
 }
 
-@media only screen and (max-width: 600px) {
 
-  .Layout {
-    height: 90vh;
+/* IPAD */
+@media only screen 
+and (max-device-width: 1024px) {
+  
+  .item-edit {
+    font-family: "Roboto", sans-serif;
     display: flex;
-    flex-direction: column;}
+    background-color: white;
+    margin: 200px auto 0 auto;
+    width: 70vw;
+  }
+  
+  .edit-item-image {
+    display: flex;
+    background-size: cover;
+    min-height: 295px;
+    max-height: 295px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+  
+  .edit-form {
+    width: 90%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .e-detail{
+    width: 90%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px 0 ;
+  }
+  
+  .e-input{
+    margin-bottom: 10px;
+  }
+  
+  .e-label{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+  }
+  
+  .e-button-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 70vw;
+    margin: 10px auto;
+  }
+  
+  .e-button{
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #546747;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  }
+  
 
-    .layout-children {
-      padding: 0;
-    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
 
   .item-edit {
     font-family: "Roboto", sans-serif;
@@ -111,13 +170,6 @@ border-radius: 2px;
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     margin-left: 10px;
-  }
-  
-  .e-button-container{
-    display: flex;
-    justify-content: center;
-    width: 70vw;
-    margin: 10px auto;
   }
   
   .e-button{
