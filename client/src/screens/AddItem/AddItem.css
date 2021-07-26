@@ -40,3 +40,64 @@
   margin-top: 15px;
   margin-left: 330px;
 }
+
+@media only screen and (max-width: 600px) {
+  
+  .Layout {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;}
+
+    .layout-children {
+      padding: 0;
+    }
+
+
+
+  .create-form {
+    margin-top: 100px;
+  }
+  
+  .header {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    color: #546747;
+    text-transform: uppercase;
+    font-weight: 350;
+    margin-top: 10px;
+  }
+  
+  .create-form {
+    border: 2px solid #546747;
+    border-radius: 1%;
+    padding: 0px;
+    width: 90vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-container {
+    display: grid;
+    justify-content: center;
+  }
+  
+  .add-input {
+    width: 70vw !important;
+    background-color: #fddca5 !important;
+    margin-left: 0px;
+  }
+  
+  .submit-button {
+    background-color: #546747 !important;
+    font-size: 20px !important;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+
+
+
+}
