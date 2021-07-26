@@ -2,7 +2,7 @@
   padding-top: 5rem;
   background-color: #fafaf2;
 }
-.header {
+#inventory-header {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -47,9 +47,9 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-  .header {
+  #inventory-header {
     margin-top: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -62,13 +62,17 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .header {
-    margin-top: -0.5rem;
+  #inventory-header {
+    margin-top: -1rem;
   }
 }
 @media only screen and (max-width: 375px) {
-  .header {
-    font-size: 1.5rem;
+  #inventory-header {
+    font-size: 1.75rem;
+    font-weight: 500;
     margin-top: -1rem;
+    margin-left: 5rem;
+    margin-right: -2.5rem;
+    text-align: center;
   }
 }

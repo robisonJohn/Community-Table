@@ -64,8 +64,8 @@ const Login = (props) => {
         <Container className="login-container">
           <Col className="login-body">
             <Row className="login-row">
-              <div id="login-header">
-                <h2 id="header-text">TAKE A SEAT</h2>
+              <div>
+                <h2 id="login-header">TAKE A SEAT</h2>
               </div>
             </Row>
             <Row className="login-row">

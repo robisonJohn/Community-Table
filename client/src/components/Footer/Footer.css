@@ -20,3 +20,26 @@
   margin-bottom: 0.75em;
   padding-right: 1.5em;
 }
+
+@media only screen and (max-width: 375px) {
+  .Footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0em;
+  }
+  #copy-right {
+    margin-top: 22.5em;
+    padding-left: 1.15em;
+    font-weight: 400;
+    font-size: small;
+  }
+  #copy-right span {
+    font-weight: 600;
+  }
+
+  #github-logo {
+    margin-top: 17.5em;
+    margin-right: -8em;
+  }
+}
