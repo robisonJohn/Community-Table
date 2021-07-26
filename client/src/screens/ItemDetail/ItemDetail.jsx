@@ -36,15 +36,18 @@ return(
       <div className="category">{item.category}</div>
       <div className="benefits">{item.benefits}</div>
       <div className="quantity"> <h4>Quantity: </h4> {item.quantity}</div>
+      <div className="price">${item.price}</div>
+      <div className="shelfLife">{item.shelfLife}</div>
+      <div className="daysHeld">{item.daysHeld}</div>
       <div className="box"><p>1 = 1<img src="https://cdn.iconscout.com/icon/free/png-256/box-package-parcel-logistic-delivery-unpack-open-shipping-3-20450.png" alt="box" width="20"/> </p> </div>
   </div>   
   </div>
       <div className='button-container'>
-           <Link className='back-button' to={`/inventory`}>
-             <button> GO BACK </button>
+          <Link className='back-button' to={`/inventory`}>
+              <button> GO BACK </button>
             </Link>
             <Link className='edit-button' to={`/items/${item._id}/edit`}>
-             <button> UPDATE TABLE </button>
+              <button> UPDATE TABLE </button>
             </Link>
             <button
               className='delete-button'
@@ -52,7 +55,7 @@ return(
             >
               DELETE ITEM
             </button>
-   </div>
+    </div>
 </Layout>
 
 )
