@@ -40,7 +40,11 @@ const SignUp = (props) => {
         email: "",
         password: "",
         passwordConfirmation: "",
-        address: "",
+        addressOne: "",
+        addressTwo: "",
+        city: "",
+        state: "",
+        zip: "",
         sError: true,
         errorMsg: "Sign Up Details Invalid",
       });
@@ -70,14 +74,18 @@ const SignUp = (props) => {
     email,
     password,
     passwordConfirmation,
-    address,
+    addressOne,
+    addressTwo,
+    city,
+    state,
+    zip
   } = form;
 
   return (
     <Layout>
       <Container className="signup-container">
-        <div>
-          <h2 id="signup-header">COME JOIN THE TABLE</h2>
+        <div id="signup-header">
+          <h1>COME JOIN THE TABLE</h1>
         </div>
         <Form onSubmit={onSignUp} className="signup-form">
           <Form.Group>
@@ -144,9 +152,53 @@ const SignUp = (props) => {
             <Form.Control
               required
               type="text"
-              name="address"
-              value={address}
-              placeholder="Address"
+              name="addressOne"
+              value={addressOne}
+              placeholder="Address Line One"
+              onChange={handleChange}
+              className="sign-input"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              required
+              type="text"
+              name="addressTwo"
+              value={addressTwo}
+              placeholder="Address Line Two"
+              onChange={handleChange}
+              className="sign-input"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              required
+              type="text"
+              name="city"
+              value={city}
+              placeholder="City"
+              onChange={handleChange}
+              className="sign-input"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              required
+              type="text"
+              name="state"
+              value={state}
+              placeholder="State"
+              onChange={handleChange}
+              className="sign-input"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              required
+              type="text"
+              name="zip"
+              value={zip}
+              placeholder="Zip Code"
               onChange={handleChange}
               className="sign-input"
             />
