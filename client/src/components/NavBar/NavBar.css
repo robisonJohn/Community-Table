@@ -59,7 +59,7 @@ nav {
   }
   .links {
     font-size: 1.4rem;
-    max-width: 60vw;
+    max-width: 57vw;
     margin-top: 2.5rem;
   }
   #welcome {
@@ -90,7 +90,7 @@ nav {
     margin-top: 0.5rem;
   }
   .links {
-    font-size: 0.95rem;
+    font-size: 0.99rem;
     max-width: 90vw;
     margin-top: 2.5rem;
     margin-left: -5em;
@@ -102,8 +102,8 @@ nav {
     margin-right: 1em;
   }
   #welcome {
-    margin-right: -22rem;
+    margin-right: -21.75rem;
     margin-bottom: 2rem;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 }

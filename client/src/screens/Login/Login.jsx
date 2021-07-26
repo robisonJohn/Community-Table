@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { login } from "../../services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import "./Login.css";
 import { Layout } from "../../components";
 import { Form, Container, Button, Col, Row } from "react-bootstrap";
@@ -70,7 +70,9 @@ const Login = (props) => {
             </Row>
             <Row className="login-row">
               <Form id="login-form" onSubmit={onLogin}>
-                <p id="login-signup">Don't have an account? Sign up here!</p>
+                <Link to={`/sign-up`}>
+                  <p id="login-signup">Don't have an account? Sign up here!</p>
+                </Link>
                 <Form.Group className="form-element">
                   <Form.Control
                     required
