@@ -290,6 +290,15 @@ const items = [
     
 ]
 
-export const optimizePayoff = () => {
+const optimizePayoff = (arr) => {
+    return (
+        arr.forEach((element) => console.log({
+            "price": element.price,
+            "shelfLife": element.shelfLife,
+            "daysHeld": element.daysHeld,
+        }))
+    )
 
 }
+
+optimizePayoff(items)
