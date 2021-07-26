@@ -11,6 +11,9 @@ const ItemEdit = (props) => {
     imgURL: "",
     benefits: "",
     quantity: "",
+    price: "",
+    shelfLife: "",
+    daysHeld: ""
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -80,6 +83,30 @@ const ItemEdit = (props) => {
             placeholder="Quantity"
             value={item.quantity}
             name="quantity"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="price"
+            placeholder="Price"
+            value={item.price}
+            name="price"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="shelfLife"
+            placeholder="Shelf Life"
+            value={item.shelfLife}
+            name="shelfLife"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="daysHeld"
+            placeholder="Days Held"
+            value={item.daysHeld}
+            name="daysHeld"
             required
             onChange={handleChange}
           />
