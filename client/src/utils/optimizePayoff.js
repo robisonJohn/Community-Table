@@ -291,12 +291,25 @@ const items = [
 ]
 
 const optimizePayoff = (arr) => {
+
     return (
-        arr.forEach((element) => console.log({
-            "price": element.price,
-            "shelfLife": element.shelfLife,
-            "daysHeld": element.daysHeld,
-        }))
+        arr.forEach((element) => {
+            let halfLife = 0.5 * element.price
+            let deduction = 0.25 * element.price
+            let shelfLife = element.shelfLife;
+            let daysHeld =element.daysHeld;
+            let expectedValue = element.price * (daysHeld / shelfLife)
+            if (expectedValue > halfLife) {
+                console.log(`${element.name}: Item is good to go`)
+            } else {
+                if (expectedValue > deduction) {
+                    console.log(`${element.name}: Item is fine, but should be watched`)
+                } else {
+                    console.log(`${element.name}: Item needs to go!`)
+                }
+                
+            }
+        })
     )
 
 }
