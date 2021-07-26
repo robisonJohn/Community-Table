@@ -10,54 +10,78 @@ const insertData = async () => {
     const SALT_ROUNDS = 11;
 
     // insert user info here
-        const user1 = new User ({
-            username: "lokimeas",
-            company_name: "Loki's Fruit Shop",
-            email: "loki@loveswatermelon.com",
-            password_digest: await bcrypt.hash("peanutbutter123!", SALT_ROUNDS),
-            address: "4321 Charlwood St. Lakewood, CA 90713"
-        })
-        await user1.save()
-        const user2 = new User ({
-            username: "abby5",
-            company_name: "Flamingos Market on Second",
-            email: "flamingos2021@flamingosmarket.com",
-            password_digest: await bcrypt.hash("flaming0", SALT_ROUNDS),
-            address: "10 E 21st St #2, New York, NY 10010"
-        })
-        await user2.save()
-        const user3 = new User ({
-            username: "forrestgump",
-            company_name: "Forrest Supermarket",
-            email: "forrestgump@runforrestrun.com",
-            password_digest: await bcrypt.hash("jenny123", SALT_ROUNDS),
-            address: "21 Davis St. Greenbow AL, 36744"
-        })
-        await user3.save()
-        const user4 = new User({
-            username: 'Bruno',
-            company_name: 'The Store',
-            email: 'root@super.gmail.com',
-            password_digest: await bcrypt.hash('03Brun03', SALT_ROUNDS),
-            address: '65 River St. Evansville, IN 47711',
-        })
-        await user4.save()
-        const user5 = new User({
-            username: 'Emma',
-            company_name: 'The butter market',
-            email: 'emma@gmail.com',
-            password_digest: await bcrypt.hash('emma!', SALT_ROUNDS),
-            address: '67 Locust Court Holland, MI 49423',
-        })
-        await user5.save()
-        const user6 = new User({
-            username: 'Ana-Sof',
-            company_name: 'Superama',
-            email: 'anso@gmail.com',
-            password_digest: await bcrypt.hash('Ans0S123', SALT_ROUNDS),
-            address: '1N 5th St. Brooklyn, NY 11201',
-        })
-        await user6.save()
+    const user1 = new User ({
+        username: "lokimeas",
+        company_name: "Loki's Fruit Shop",
+        email: "loki@loveswatermelon.com",
+        password_digest: await bcrypt.hash("peanutbutter123!", SALT_ROUNDS),
+        addressOne: "4321 Charlwood St.",
+        addressTwo: "n/a",
+        city: "Lakewood",
+        state: "CA",
+        zip: "90713"
+    })
+    await user1.save()
+    const user2 = new User ({
+        username: "abby5",
+        company_name: "Flamingos Market on Second",
+        email: "flamingos2021@flamingosmarket.com",
+        password_digest: await bcrypt.hash("flaming0", SALT_ROUNDS),
+        addressOne: "10 E 21st St #2",
+        addressTwo: "Apartment #2",
+        city: "New York",
+        state: "NY",
+        zip: "10010"
+    })
+    await user2.save()
+    const user3 = new User ({
+        username: "forrestgump",
+        company_name: "Forrest Supermarket",
+        email: "forrestgump@runforrestrun.com",
+        password_digest: await bcrypt.hash("jenny123", SALT_ROUNDS),
+        addressOne: "21 Davis St.",
+        addressTwo: "n/a",
+        city: "Greenbow",
+        state: "AL",
+        zip: "36744"
+    })
+    await user3.save()
+    const user4 = new User({
+        username: 'Bruno',
+        company_name: 'The Store',
+        email: 'root@super.gmail.com',
+        password_digest: await bcrypt.hash('03Brun03', SALT_ROUNDS),
+        addressOne: '65 River St.',
+        addressTwo: "n/a",
+        city: "Evansville",
+        state: "IN",
+        zip: "47711"
+    })
+    await user4.save()
+    const user5 = new User({
+        username: 'Emma',
+        company_name: 'The butter market',
+        email: 'emma@gmail.com',
+        password_digest: await bcrypt.hash('emma!', SALT_ROUNDS),
+        addressOne: '67 Locust Court',
+        addressTwo: "n/a",
+        city: "Holland",
+        state: "MI",
+        zip: "49423"
+    })
+    await user5.save()
+    const user6 = new User({
+        username: 'Ana-Sof',
+        company_name: 'Superama',
+        email: 'anso@gmail.com',
+        password_digest: await bcrypt.hash('Ans0S123', SALT_ROUNDS),
+        addressOne: '1N 5th St.',
+        addressTwo: "n/a",
+        city: "Brooklyn",
+        state: "NY",
+        zip: "11201"
+    })
+    await user6.save()
 
 
 
