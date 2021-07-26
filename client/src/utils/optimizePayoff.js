@@ -338,43 +338,30 @@ const optimizePayoff = (arr) => {
 
 const goodItems = (arr) => {
     arr.forEach((element) => {
-        let halfLife = 0.5 * element.price
         let deduction = 0.25 * element.price
         let shelfLife = element.shelfLife;
         let daysHeld =element.daysHeld;
         let expectedValue = element.price * (daysHeld / shelfLife)
-        if (expectedValue > halfLife) {
-            console.log(`${element.name}: Item is relatively new`)
+        if (expectedValue > deduction) {
+            return (`${element.name} is good to sell`)
         }
     })
 }
 
-const acceptableItems = (arr) => {
-    arr.forEach((element) => {
-        let halfLife = 0.5 * element.price
-        let deduction = 0.25 * element.price
-        let shelfLife = element.shelfLife;
-        let daysHeld =element.daysHeld;
-        let expectedValue = element.price * (daysHeld / shelfLife)
-        if (expectedValue <= halfLife) {
-            if (expectedValue > deduction) {
-                return (`${element.name}: Item is good to go`)
-            }
-            
-        }
-    })
-}
-
-const needToGoItems = (arr) => {
+const needToGo = (arr) => {
     arr.forEach((element) => {
         let deduction = 0.25 * element.price
         let shelfLife = element.shelfLife;
         let daysHeld =element.daysHeld;
         let expectedValue = element.price * (daysHeld / shelfLife)
         if (expectedValue <= deduction) {
-            return (`${element.name}: Item needs to go ASAP`)
+            
+            console.log(`${element.name}: Item needs to go`)
+            
         }
     })
 }
+
+
 
 goodItems(items)
