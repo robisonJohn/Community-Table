@@ -36,7 +36,7 @@ const AddItem = (props) => {
   return (
     <Layout user={props.user}>
       <div id="add-item-header">
-        <h2 className="header">ADD TO TABLE INVENTORY</h2>
+        <h2 id="add-header">ADD TO TABLE INVENTORY</h2>
       </div>
       <Container className="form-container">
         <Form className="create-form" onSubmit={handleSubmit}>
@@ -98,7 +98,7 @@ const AddItem = (props) => {
             />
           </Form.Group>
 
-          <Button type="submit" className="submit-button">
+          <Button type="submit" id="submit-button">
             Add Item
           </Button>
         </Form>

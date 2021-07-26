@@ -88,6 +88,7 @@ body {
   margin-top: 10px;
   margin-left: 168px;
   font-style: italic;
+  color: black;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -98,6 +99,9 @@ body {
   }
   #login-form {
     border: 6px solid #2b331f !important;
+  }
+  #login-button {
+    margin-left: 340px;
   }
 }
 
@@ -122,7 +126,7 @@ body {
 @media only screen and (max-width: 375px) {
   #login-header {
     font-size: 1.75rem !important;
-    margin-top: -0.25rem !important;
+    margin-top: 5rem !important;
     margin-left: 8rem;
     text-align: center;
   }
