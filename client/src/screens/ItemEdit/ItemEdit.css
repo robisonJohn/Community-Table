@@ -40,11 +40,6 @@
   font-size: 10px;
 }
 
-.e-button-container{
-  display: flex;
-  margin: 10px auto;
-}
-
 .e-button{
 line-height: 1.5;
 box-sizing: border-box;
@@ -54,8 +49,13 @@ background-color: #546747;
 color: white;
 border: none;
 border-radius: 2px;
+width: 100px;
 }
 
+.button-box{
+
+  display: flex;
+}
 
 /* IPAD */
 @media only screen 
