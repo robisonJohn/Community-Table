@@ -90,7 +90,6 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <div className="e-button-container">
               <button
                 type="submit"
                 className="e-button"
@@ -98,7 +97,6 @@ const ItemEdit = (props) => {
               >
                 CHANGE
               </button>
-            </div>
           </form>
         </div>
       </div>
