@@ -3,6 +3,7 @@ import { Layout } from "../../components";
 import { getItem, updateItem } from "../../services/items";
 import { useParams, Redirect } from "react-router-dom";
 import "./ItemEdit.css";
+import { Form, Button, Image, Container } from 'react-bootstrap';
 
 const ItemEdit = (props) => {
   const [item, setItem] = useState({
@@ -47,11 +48,11 @@ const ItemEdit = (props) => {
 
   return (
     <Layout  user={props.user}>
-      <div className="item-edit">
-        <div className="image-container">
-          <img className="edit-item-image" src={item.imgURL} alt={item.name} />
-          <form onSubmit={handleSubmit}>
-            <input
+      <Container className="item-edit">
+        <Container className="image-container">
+          <Image className="edit-item-image" src={item.imgURL} alt={item.name} />
+          <Form onSubmit={handleSubmit}>
+            <Form.Control
               className="edit-input-image"
               placeholder="Image Link"
               value={item.imgURL}
@@ -59,10 +60,10 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
-          </form>
-        </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
-          <input
+          </Form>
+        </Container>
+        <Form className="edit-form" onSubmit={handleSubmit}>
+          <Form.Control
             className="category"
             placeholder="Category"
             value={item.category}
@@ -70,7 +71,9 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <textarea
+          <Form.Control 
+            as="textarea"
+            rows={3}
             className="input-benefits"
             placeholder="Benefits"
             value={item.benefits}
@@ -78,7 +81,7 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <input
+          <Form.Control
             className="quantity"
             placeholder="Quantity"
             value={item.quantity}
@@ -86,7 +89,7 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <input
+          <Form.Control
             className="price"
             placeholder="Price"
             value={item.price}
@@ -94,7 +97,7 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <input
+          <Form.Control
             className="shelfLife"
             placeholder="Shelf Life"
             value={item.shelfLife}
@@ -102,7 +105,7 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <input
+          <Form.Control
             className="daysHeld"
             placeholder="Days Held"
             value={item.daysHeld}
@@ -110,11 +113,11 @@ const ItemEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <button type="submit" className="save-button">
+          <Button type="submit" className="save-button">
             Change
-          </button>
-        </form>
-      </div>
+          </Button>
+        </Form>
+      </Container>
     </Layout>
   );
 };
