@@ -2,7 +2,7 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   background-color: white;
-  margin: 200px auto 0 auto;
+  margin: 100px auto 0 auto;
   width: 70vw;
 }
 
@@ -86,13 +86,17 @@
     height: 90vh;
     display: flex;
     flex-direction: column;}
+
+    .layout-children {
+      padding: 0;
+    }
  
   .item-detail {
     font-family: "Roboto", sans-serif;
     display: flex;
     background-color: white;
-    margin: 200px auto 0 auto;
-    width: 99vw;
+    margin: 100px auto 0 auto;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
   }
@@ -160,7 +164,7 @@
       display: flex;
       justify-content: space-evenly;
       width: 90vw;
-      margin: 5px auto;
+      margin: 10px auto;
   }
   
   .d-button{
@@ -173,4 +177,6 @@
     border: none;
     border-radius: 2px;
   }
+
+  
 }
