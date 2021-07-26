@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 import { Layout } from "../../components";
 
 const Home = (props) => {
