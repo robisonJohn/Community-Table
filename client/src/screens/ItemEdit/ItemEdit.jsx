@@ -91,6 +91,9 @@ const ItemEdit = (props) => {
               onChange={handleChange}
             />
             <div  className="button-box">
+              <Link className='e-button' to={`/inventory`}>
+             <button className='e-button'> GO BACK </button>
+            </Link>
               <button
                 type="submit"
                 className="e-button"
@@ -98,9 +101,6 @@ const ItemEdit = (props) => {
               >
                 CHANGE
               </button>
-              <Link className='e-button' to={`/inventory`}>
-             <button className='e-button'> GO BACK </button>
-            </Link>
               </div>
           </form>
         </div>

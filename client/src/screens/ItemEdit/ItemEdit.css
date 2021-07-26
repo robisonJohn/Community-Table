@@ -3,7 +3,8 @@
   display: flex;
   background-color: white;
   margin: 200px auto 0 auto;
-  width: 90vw;
+  width: 80vw;
+  max-height: 295px;
 }
 
 .edit-item-image {
@@ -16,7 +17,7 @@
 }
 
 .edit-form {
-  width: 70%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -24,11 +25,16 @@
 }
 
 .e-detail{
-  width: 70%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 5px 20px 0 ;
+  margin: 5px 40px 0 ;
+}
+
+.name{
+  font-weight: 500;
+  color: #546747;
 }
 
 .e-input{
@@ -53,8 +59,10 @@ width: 100px;
 }
 
 .button-box{
-
   display: flex;
+  justify-content: space-around;
+ margin-top: 25px;
+
 }
 
 /* IPAD */
