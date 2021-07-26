@@ -43,7 +43,11 @@ const NavBar = ({ user }) => {
           />
         </NavLink>
         <div className="links">
-          {user && <div id="welcome">Hello, {user.username}!</div>}
+          {user && (
+            <div id="welcome">
+              Hello, {user.username} <span>from</span> {user.company_name}!
+            </div>
+          )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
