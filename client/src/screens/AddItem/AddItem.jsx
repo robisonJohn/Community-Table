@@ -1,52 +1,52 @@
 import { useState } from "react";
-import { Layout } from "../../components"
-import { Redirect } from "react-router-dom"
-import { createItem  } from "../../services/items"
+import { Layout } from "../../components";
+import { Redirect } from "react-router-dom";
+import { createItem } from "../../services/items";
 import "./AddItem.css";
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button, Container } from "react-bootstrap";
 
 const AddItem = (props) => {
   const [item, setItem] = useState({
-    name:'',
-    category:'',
-    imgURL:'',
-    benefits:'',
-    quantity:'',
-  })
+    name: "",
+    category: "",
+    imgURL: "",
+    benefits: "",
+    quantity: "",
+  });
 
-  const [isCreated, setCreated] = useState(false)
+  const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setItem({
       ...item,
       [name]: value,
-    })
-  }
+    });
+  };
 
-  const handleSubmit = async (event) =>{
-    event.preventDefault()
-    const created = await createItem(item)
-    setCreated({created})
-  }
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const created = await createItem(item);
+    setCreated({ created });
+  };
 
-  if (isCreated){
-    return <Redirect to={'/inventory'} />
+  if (isCreated) {
+    return <Redirect to={"/inventory"} />;
   }
-  return(
-    <Layout  user={props.user}>
+  return (
+    <Layout user={props.user}>
       <div id="add-item-header">
-        <h1>ADD TO TABLE INVENTORY</h1>
+        <h2 id="add-header">ADD TO TABLE INVENTORY</h2>
       </div>
       <Container className="form-container">
-        <Form className='create-form' onSubmit={handleSubmit}>
+        <Form className="create-form" onSubmit={handleSubmit}>
           <Form.Group>
             <Form.Control
               type="text"
-              className='add-input'
-              placeholder='Name'
+              className="add-input"
+              placeholder="Name"
               value={item.name}
-              name='name'
+              name="name"
               required
               autoFocus
               onChange={handleChange}
@@ -54,10 +54,10 @@ const AddItem = (props) => {
           </Form.Group>
           <Form.Group>
             <Form.Control
-              className='add-input'
-              placeholder='Category'
+              className="add-input"
+              placeholder="Category"
               value={item.category}
-              name='category'
+              name="category"
               required
               onChange={handleChange}
             />
@@ -66,46 +66,45 @@ const AddItem = (props) => {
             <Form.Control
               as="textarea"
               rows={3}
-              className='add-input'
-              placeholder='Benefits'
+              className="add-input"
+              placeholder="Benefits"
               value={item.benefits}
-              name='benefits'
+              name="benefits"
               required
               onChange={handleChange}
-            />        
+            />
           </Form.Group>
           <Form.Group>
             <Form.Control
               type="text"
-              className='add-input'
-              placeholder='Image Link'
+              className="add-input"
+              placeholder="Image Link"
               value={item.imgURL}
-              name='imgURL'
+              name="imgURL"
               required
               onChange={handleChange}
             />
           </Form.Group>
 
           <Form.Group>
-            <Form.Control 
+            <Form.Control
               type="text"
-              className='add-input'
-              placeholder='Quantity'
+              className="add-input"
+              placeholder="Quantity"
               value={item.quantity}
-              name='quantity'
+              name="quantity"
               required
               onChange={handleChange}
             />
           </Form.Group>
 
-          <Button type='submit' className='submit-button'>
+          <Button type="submit" id="submit-button">
             Add Item
           </Button>
         </Form>
       </Container>
-
     </Layout>
-  )
-}
+  );
+};
 
-export default AddItem
+export default AddItem;

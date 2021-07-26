@@ -3,7 +3,7 @@
   display: flex;
   background-color: white;
   margin: 100px auto 0 auto;
-  width: 1000px;
+  width: 70vw;
 }
 
 .item-image {
@@ -42,6 +42,7 @@
   align-items: baseline;
   justify-content: flex-end;
   height: 20px;
+  margin-top: -50px;
 }
 
 .quantity h4 {
@@ -62,17 +63,204 @@
 }
 
 .button-container{
-  display: flex;
+    display: flex;
     justify-content: space-evenly;
     width: 40vw;
     margin: 10px 0 0 580px;
 }
 
-button{
+.d-button{
+  line-height: 1.5;
+  box-sizing: border-box;
   font-weight: 500;
-  font-size: 5px;
+  font-size: 15px;
   background-color: #546747;
   color: white;
   border: none;
   border-radius: 2px;
+}
+
+
+/* IPAD */
+@media only screen 
+and (max-device-width: 1024px) {
+
+  .item-detail {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: white;
+    margin: 150px auto 0 auto;
+    width: 80vw;
+  }
+  
+  .item-image {
+    display: flex;
+    background-size: cover;
+  }
+  
+  .detail {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 20px 20px 20px;
+  }
+  
+  .name {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .category {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: -20px;
+  }
+  
+  .benefits {
+    width: 40vw;
+    margin-top: -5px;
+  }
+  
+  .quantity {
+    display: flex;
+    font-size: 15px;
+    width: 110%;
+    align-items: baseline;
+    justify-content: flex-end;
+    height: 20px;
+    margin-top: -50px;
+  }
+  
+  .quantity h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 3px;
+  }
+  
+  .box{
+    font-weight: 700;
+    display: flex;
+    font-size: 15px;
+    width: 110%;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-top: -20px;
+    padding: 0 10px;
+  }
+  
+  .button-container{
+      display: flex;
+      justify-content: space-evenly;
+      width: 40vw;
+      margin: 20px 400px;
+  }
+  
+  .d-button{
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #546747;
+    color: white;
+    border: none;
+    border-radius: 2px;
+  }
+
+}
+
+/* MOBILE */
+
+@media only screen and
+(min-device-width: 375px) 
+and (max-device-width: 812px)  {
+ 
+  .item-detail {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: white;
+    margin: 100px auto 0 auto;
+    width: 85vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item-image {
+    min-width: 85vw;
+    min-height: 50%;
+    display: flex;
+    background-size: cover;
+  }
+  
+  .detail {
+    width: 85vw;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 20px 20px 40px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .category {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  
+  .benefits {
+    width: 80vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .quantity {
+    display: flex;
+    font-size: 15px;
+    width: 90%;
+    align-items: baseline;
+    justify-content: flex-end;
+    height: 20px;
+    margin-top: -10px;
+  }
+  
+  .quantity h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 3px;
+  }
+  
+  .box{
+    font-weight: 700;
+    display: flex;
+    font-size: 15px;
+    width: 90%;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-top: 1px;
+  }
+  
+  .button-container{
+      display: flex;
+      justify-content: space-evenly;
+      width: 90vw;
+      margin: 10px auto;
+  }
+  
+  .d-button{
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #546747;
+    color: white;
+    border: none;
+    border-radius: 2px;
+  }
+
+  
 }
