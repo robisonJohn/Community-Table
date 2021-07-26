@@ -289,7 +289,7 @@ const items = [
 
     
 ]
-
+/*
 const optimizePayoff = (arr) => {
 
     return (
@@ -313,5 +313,68 @@ const optimizePayoff = (arr) => {
     )
 
 }
+*/
 
-optimizePayoff(items)
+const optimizePayoff = (arr) => {
+    arr.forEach((element) => {
+        let halfLife = 0.5 * element.price
+        let deduction = 0.25 * element.price
+        let shelfLife = element.shelfLife;
+        let daysHeld =element.daysHeld;
+        let expectedValue = element.price * (daysHeld / shelfLife)
+        if (expectedValue > halfLife) {
+            return (`${element.name}: Item is good to go`)
+        } else {
+            if (expectedValue > deduction) {
+                return (`${element.name}: Item is fine, but should be watched`)
+            } else {
+                return (`${element.name}: Item needs to go!`)
+            }
+                
+        }
+    })
+
+}
+
+const goodItems = (arr) => {
+    arr.forEach((element) => {
+        let halfLife = 0.5 * element.price
+        let deduction = 0.25 * element.price
+        let shelfLife = element.shelfLife;
+        let daysHeld =element.daysHeld;
+        let expectedValue = element.price * (daysHeld / shelfLife)
+        if (expectedValue > halfLife) {
+            console.log(`${element.name}: Item is relatively new`)
+        }
+    })
+}
+
+const acceptableItems = (arr) => {
+    arr.forEach((element) => {
+        let halfLife = 0.5 * element.price
+        let deduction = 0.25 * element.price
+        let shelfLife = element.shelfLife;
+        let daysHeld =element.daysHeld;
+        let expectedValue = element.price * (daysHeld / shelfLife)
+        if (expectedValue <= halfLife) {
+            if (expectedValue > deduction) {
+                return (`${element.name}: Item is good to go`)
+            }
+            
+        }
+    })
+}
+
+const needToGoItems = (arr) => {
+    arr.forEach((element) => {
+        let deduction = 0.25 * element.price
+        let shelfLife = element.shelfLife;
+        let daysHeld =element.daysHeld;
+        let expectedValue = element.price * (daysHeld / shelfLife)
+        if (expectedValue <= deduction) {
+            return (`${element.name}: Item needs to go ASAP`)
+        }
+    })
+}
+
+goodItems(items)
