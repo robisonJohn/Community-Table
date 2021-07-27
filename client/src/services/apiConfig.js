@@ -13,7 +13,7 @@ const getToken = () => {
 // })
 
 const api = axios.create({
-  baseURL: "https://community-table-mvp.herokuapp.com/api",
+  baseURL: "http://localhost:3000/api",
 });
 
 api.interceptors.request.use(

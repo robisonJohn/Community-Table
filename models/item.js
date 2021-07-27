@@ -6,7 +6,10 @@ const Item = new Schema(
         category: { type: String, required: true },
         imgURL: { type: String, required: true },
         benefits: { type: String, required: true },
-        quantity: { type: String, required: true }
+        quantity: { type: String, required: true },
+        price: { type: String, required: true },
+        shelfLife: { type: String, required: true },
+        daysHeld: { type: String, required: true }
     },
     { timestamps: true }
 )
