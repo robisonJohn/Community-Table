@@ -81,69 +81,38 @@
   align-items: center;
 }
 
-/* @media only screen and (max-width: 1024px) {
-  .main-img {
-    margin-top: 7rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .main-img {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    margin-top: 4rem;
-    min-width: 90%;
-    height: 47vh;
-  }
-  .produce {
-    width: 40vw;
-    height: 27vh;
-    margin-left: -1.7rem;
-  }
-  .dry-goods {
-    width: 40vw;
-    height: 27vh;
-    margin-right: -1.7rem;
-  }
-  .category-box {
-    margin-bottom: -6.8rem;
-  }
-} */
-
+/*/MEDIO FOR IPHONE/ */
 @media only screen and (max-width: 600px) {
- 
   body {
     margin: 0;
     padding: 0;
   }
-
+  
   .home {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
-
+  
   .main-img {
     font-family: "Roboto", sans-serif;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-      url("https://www.phillymag.com/wp-content/uploads/sites/3/2015/03/MO-grocery-delivery-jason-varney-940x540.jpg");
+    url("https://www.phillymag.com/wp-content/uploads/sites/3/2015/03/MO-grocery-delivery-jason-varney-940x540.jpg");
     background-size: cover;
     display: flex;
-    width: 100vw;
-    height: 400px;
+    width: 70vw;
+    height: 60vh;
     flex-direction: column;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0;
-    height: 47vh;
+    margin: 100px 0 0 0;
   }
-
+  
   .main-txt {
     width: 250px;
     margin: 80px auto;
     text-align: center;
   }
-
+  
   .main-txt h3 {
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #fab73d;
@@ -151,7 +120,7 @@
     font-size: 30px;
     font-weight: bold;
   }
-
+  
   .sign-up-button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -164,9 +133,9 @@
     border: none;
     border-radius: 2px;
   }
-
+  
   .category-box {
-    width: 90vw;
+    width: 70vw;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -180,43 +149,41 @@
     color: white;
     display: flex;
   }
-
+  
   .produce {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg);
+    url(https://cdn.apartmenttherapy.info/image/upload/v1556919377/k/Photo/Lifestyle/Lifestyle_-_Kitchn_Guide_to_Storing_Produce_and_Vegetables_2019-04-30_PHOTO_Kitchn66447_.jpg);
     background-size: cover;
     display: flex;
-    width: 95vw;
+    width: 70vw;
     height: 10vh;
     flex-direction: column;
     align-items: center;
   }
-
+  
   .dry-goods {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://c4.wallpaperflare.com/wallpaper/907/539/595/cereal-food-bread-noodles-wheat-hd-wallpaper-thumb.jpg");
+    url("https://c4.wallpaperflare.com/wallpaper/907/539/595/cereal-food-bread-noodles-wheat-hd-wallpaper-thumb.jpg");
     background-size: cover;
     display: flex;
-    width: 95vw;
+    width: 70vw;
     height: 10vh;
     flex-direction: column;
     align-items: center;
   }
+  
 
-  .Layout {
-    height: 97vh;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
-/* @media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1024px)
+and (max-width: 1920px) {
   .main-img {
     height: 72vh;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 601px)
+and (max-width: 768px) {
   .main-img {
     margin-left: 12rem;
     margin-right: 5rem;
@@ -241,9 +208,40 @@
   .category-box {
     margin-bottom: -7rem;
   }
-} */
+}
 
-/****** MEDIA QUERY FOR TABLET *******/ 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
 
- }
+@media only screen 
+and (min-width: 601px)
+and (max-width: 768px) {
+  .main-img {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 4rem;
+    min-width: 90%;
+    height: 47vh;
+  }
+  .produce {
+    width: 40vw;
+    height: 27vh;
+    margin-left: -1.7rem;
+  }
+  .dry-goods {
+    width: 40vw;
+    height: 27vh;
+    margin-right: -1.7rem;
+  }
+  .category-box {
+    margin-bottom: -6.8rem;
+  }
+}
+
+
+@media only screen 
+and (min-width: 769px)
+and (max-width: 1024px) {
+  .main-img {
+    margin-top: 7rem;
+  }
+}
+
