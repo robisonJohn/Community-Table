@@ -33,7 +33,7 @@
   .Footer {
     bottom: 0;
     left: 0;
-    width: 65vw;
+    width: 100vw;
     height: 4em;
     background-color: #fafaf2;
     flex-direction: row;
@@ -41,7 +41,7 @@
   }
   
   #copy-right {
-    width: 50vw;
+    width: 60vw;
     margin-top: 1.5em;
     padding-left: 1.15em;
     font-weight: 400;
