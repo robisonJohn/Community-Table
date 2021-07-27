@@ -27,7 +27,7 @@
 .category {
   font-size: 15px;
   font-weight: 300;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .benefits {
@@ -40,7 +40,7 @@
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-  margin: 5px 0 0 5px;
+  margin: 3px 0 0 5px;
 }
 
 .h4-text h4{
@@ -56,7 +56,7 @@
   align-items: baseline;
   justify-content: flex-end;
   height: 20px;
-  margin-top: -30px;
+  margin-top: -90px;
 }
 
 .quantity h4 {
@@ -72,7 +72,7 @@
   width: 95%;
   align-items: baseline;
   justify-content: flex-end;
-  margin-top: -20px;
+  margin-top: -10px;
   padding: 0 10px;
 }
 
@@ -96,7 +96,7 @@
 
 
 /* IPAD */
-@media only screen and (min-device-width: 814px)
+@media only screen and (min-device-width: 768px)
 and (max-device-width: 1024px) {
 
   .item-detail {
@@ -156,7 +156,7 @@ and (max-device-width: 1024px) {
     font-weight: 700;
     display: flex;
     font-size: 15px;
-    width: 110%;
+    width: 90%;
     align-items: baseline;
     justify-content: flex-end;
     margin-top: -20px;
@@ -186,7 +186,7 @@ and (max-device-width: 1024px) {
 /* MOBILE */
 
 @media only screen
-and (max-device-width: 812px)  {
+and (max-device-width: 768px)  {
  
   .item-detail {
     font-family: "Roboto", sans-serif;
