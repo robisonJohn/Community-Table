@@ -17,6 +17,15 @@ const Items = (props) => {
   const [applySort, setApplySort] = useState(false);
   const [sortType, setSortType] = useState('lowest-quantity');
 
+  useEffect(() => {
+    const fetchItems = async () => {
+      const allItems = await getItems();
+      setItems(allItems);
+    };
+    fetchItems();
+  }, []);
+
+
   const handleSort = (type) => {
     if (type !== '' && type !== undefined) {
       setSortType(type)
@@ -50,6 +59,7 @@ const Items = (props) => {
         setFilterResult(highestShelfLife(filterResult))
         break 
       default:
+        setFilterResult(items)
         break
       
     }
@@ -82,6 +92,7 @@ const Items = (props) => {
         setFilterResult(needToGo(items))
         break
       default:
+        setFilterResult(items)
         break
 
     }
@@ -94,13 +105,11 @@ const Items = (props) => {
 
   const handleSubmit = (event) => event.preventDefault()
 
-  useEffect(() => {
-    const fetchItems = async () => {
-      const allItems = await getItems();
-      setItems(allItems);
-    };
-    fetchItems();
-  }, []);
+  let result = items
+  if (filterResult.length > 0) {
+    result = filterResult;
+  } 
+
 
   return (
     <Layout user={props.user}>
@@ -111,7 +120,7 @@ const Items = (props) => {
         
 
         <div className="items-container">
-          {filterResult.map((item, index) => {
+          {result.map((item, index) => {
             return (
               <Item
                 _id={item._id}
@@ -122,7 +131,8 @@ const Items = (props) => {
                 key={index}
               />
             );
-          })}
+          })
+}
         </div>
       </div>
     </Layout>

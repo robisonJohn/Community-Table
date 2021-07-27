@@ -118,7 +118,7 @@ const insertData = async () => {
             quantity: "9",
             price: "17",
             shelfLife: "7",
-            daysHeld: "5"
+            daysHeld: "6"
         },
         {
             name: "Cereal",
@@ -151,7 +151,7 @@ const insertData = async () => {
                 quantity: "4",
                 price: "12",
                 shelfLife: "35",
-                daysHeld: "24"
+                daysHeld: "33"
             },
             {
                 name: "Pasta",
@@ -251,7 +251,7 @@ const insertData = async () => {
                 quantity: "67",
                 price: "20",
                 shelfLife: "5",
-                daysHeld: "3"
+                daysHeld: "4"
             },
             {
                 name: "Red Pepper",
@@ -262,7 +262,7 @@ const insertData = async () => {
                 quantity: "73",
                 price: "30",
                 shelfLife: "14",
-                daysHeld: "3"
+                daysHeld: "12"
             },
             {
                 name: "Granny Smith",
@@ -328,7 +328,7 @@ const insertData = async () => {
                 quantity: "16",
                 price: "25.6",
                 shelfLife: "270",
-                daysHeld: "46"
+                daysHeld: "267"
             },
             {
                 name: "Nutella",
@@ -350,7 +350,7 @@ const insertData = async () => {
                 quantity: "49",
                 price: "10",
                 shelfLife: "65",
-                daysHeld: "21"
+                daysHeld: "63"
             },
 
         
