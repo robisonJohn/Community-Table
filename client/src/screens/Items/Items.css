@@ -2,6 +2,7 @@
   padding-top: 5rem;
   background-color: #fafaf2;
 }
+
 #inventory-header {
   display: block;
   margin: 0 auto;
@@ -9,6 +10,15 @@
   color: #546747;
   text-transform: uppercase;
   font-weight: 350;
+}
+#filter-sort {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.form-select {
+  border: 1px solid #fab73f !important;
+  border-radius: 3%;
 }
 
 .items-container {

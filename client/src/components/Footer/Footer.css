@@ -28,8 +28,7 @@
   padding-right: 1.5em;
 }
 
-@media only screen and (min-width: 376px)
- and (max-width: 768px) {
+@media only screen and (min-width: 376px) and (max-width: 768px) {
   .Footer {
     bottom: 0;
     left: 0;
@@ -39,7 +38,7 @@
     flex-direction: row;
     align-items: center;
   }
-  
+
   #copy-right {
     width: 60vw;
     margin-top: 1.5em;
@@ -48,22 +47,20 @@
     font-size: small;
     color: #546747;
   }
-  
+
   #copy-right a {
     color: #546747;
     font-weight: 600;
     text-decoration: none;
   }
-  
+
   #github-logo {
     display: flex;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
     padding-right: 1.5em;
   }
-  
- }
-
+}
 
 @media only screen and (max-width: 375px) {
   .Footer {
@@ -73,7 +70,7 @@
     height: 0em;
   }
   #copy-right {
-    margin-top: 22.5em;
+    margin-top: 21em;
     padding-left: 1.15em;
     font-weight: 400;
     font-size: small;
@@ -84,6 +81,6 @@
 
   #github-logo {
     margin-top: 17.5em;
-    margin-right: -8em;
+    margin-right: -12em;
   }
 }
