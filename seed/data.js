@@ -93,15 +93,9 @@ const insertData = async () => {
       benefits:
         "Bananas are rich in fiber, antioxidants and several nutrients. They can help moderate blood sugar levels after meals and may reduce appetite by slowing stomach emptying. Bananas are a good dietary source of potassium and magnesium — two nutrients that are essential for heart health.",
       quantity: "5",
-    },
-    {
-      name: "Baby Carrots",
-      category: "Produce",
-      imgURL:
-        "https://media.self.com/photos/60ff012fe8a6e3edda24d78f/4:3/w_2560%2Cc_limit/GettyImages-139745455.jpg",
-      benefits:
-        "Carrots are an excellent source of vitamin A in the form of beta carotene. They are also a good source of several B vitamins, as well as vitamin K and potassium.Eating carrots is linked to a reduced risk of cancer and heart disease, as well as improved eye health.",
-      quantity: "12",
+      price: "5.7",
+      shelfLife: "7",
+      daysHeld: "5",
     },
     {
       name: "Pink Lady Apples",
@@ -111,6 +105,21 @@ const insertData = async () => {
       benefits:
         "The Pink Lady apple is not just a taste sensation – it is also packed with vitality and remarkable nutritional assets. An apple contains 4% of vitamins and minerals, and provides ¼ of the recommended daily Vitamin C intakes. They limit the ageing of cells and reduce the permeability of blood vessels.",
       quantity: "9",
+      price: "15.72",
+      shelfLife: "7",
+      daysHeld: "6",
+    },
+    {
+      name: "Baby Carrots",
+      category: "Produce",
+      imgURL:
+        "https://media.self.com/photos/60ff012fe8a6e3edda24d78f/4:3/w_2560%2Cc_limit/GettyImages-139745455.jpg",
+      benefits:
+        "Carrots are an excellent source of vitamin A in the form of beta carotene. They are also a good source of several B vitamins, as well as vitamin K and potassium.Eating carrots is linked to a reduced risk of cancer and heart disease, as well as improved eye health.",
+      quantity: "12",
+      price: "20",
+      shelfLife: "18",
+      daysHeld: "3",
     },
     {
       name: "Cereal",
@@ -120,6 +129,9 @@ const insertData = async () => {
       benefits:
         "An excellent source of carbohydrates. a significant source of protein. a good source of B group vitamins, including folate. a good source of many minerals, such as iron, magnesium, copper, phosphorus and zinc.",
       quantity: "2",
+      price: "22",
+      shelfLife: "270",
+      daysHeld: "47",
     },
     {
       name: "White Bread",
@@ -129,6 +141,9 @@ const insertData = async () => {
       benefits:
         "White bread is fortified with calcium and four medium slices per   day would provide over 30% of the recommended daily intake of calcium which we need every day to maintain healthy bones and teeth.",
       quantity: "1",
+      price: "42.9",
+      shelfLife: "7",
+      daysHeld: "6",
     },
     {
       name: "Eggs",
@@ -138,6 +153,9 @@ const insertData = async () => {
       benefits:
         "Eggs are a very good source of protein. More than half the protein of an egg is found in the egg white, which also includes vitamin B2 and lower amounts of fat than the yolk. Eggs are rich sources of selenium, vitamin D, B6, B12 and minerals such as zinc, iron and copper.",
       quantity: "4",
+      price: "49.9",
+      shelfLife: "35",
+      daysHeld: "21",
     },
     {
       name: "Pasta",
@@ -152,6 +170,18 @@ const insertData = async () => {
       daysHeld: "207",
     },
     {
+      name: "Red Pepper",
+      category: "Produce",
+      imgURL:
+        "https://stirringmyspicysoul.com/wp-content/uploads/2019/07/IMG_0441.jpg",
+      benefits:
+        "Technically a fruit, red peppers are more common as a staple in the vegetable produce section. They're also an excellent source of vitamins A and C. Each half cup of raw red pepper provides you with 47 percent of your daily recommended intake of vitamin A and 159 percent of your vitamin C.",
+      quantity: "73",
+      price: "30",
+      shelfLife: "14",
+      daysHeld: "12",
+    },
+    {
       name: "Brown Rice",
       category: "Dry goods",
       imgURL:
@@ -162,6 +192,18 @@ const insertData = async () => {
       price: "55.4",
       shelfLife: "365",
       daysHeld: "86",
+    },
+    {
+      name: "Honeycrisp",
+      category: "Produce",
+      imgURL:
+        "https://statesymbolsusa.org/sites/statesymbolsusa.org/files/primary-images/honeycrispapples.jpg",
+      benefits:
+        "The health benefits from eating apples are numerous. One medium Honeycrisp apple has 5 grams of fiber and only 80 calories. Because of the amount and type of fiber, an apple will help a person feel full longer, helping him or her to consume fewer calories daily. The pectin in apples may also help lower cholesterol.",
+      quantity: "64",
+      price: "30",
+      shelfLife: "270",
+      daysHeld: "103",
     },
     {
       name: "Oatmeal",
@@ -187,6 +229,18 @@ const insertData = async () => {
       daysHeld: "8",
     },
     {
+      name: "Yellow Pepper",
+      category: "Produce",
+      imgURL:
+        "https://cdn.shopify.com/s/files/1/0038/9405/0868/products/Pepper_Capsicum_Bell_Yellow_Qty_700x700.jpg?v=1556918915",
+      benefits:
+        "Red, Orange, and Yellow Bell Peppers are full of great health benefits—they're packed with vitamins and low in calories! They are an excellent source of vitamin A, vitamin C, and potassium. Bell Peppers also contain a healthy dose of fiber, folate, and iron.",
+      quantity: "103",
+      price: "30",
+      shelfLife: "14",
+      daysHeld: "7",
+    },
+    {
       name: "Whole Wheat Bread",
       category: "Dry goods",
       imgURL:
@@ -209,6 +263,18 @@ const insertData = async () => {
       price: "7.1",
       shelfLife: "100,000",
       daysHeld: "30",
+    },
+    {
+      name: "Granny Smith",
+      category: "Produce",
+      imgURL:
+        "https://www.jesmondfruitbarn.com.au/wp-content/uploads/2016/10/Jesmond-Fruit-Barn-Granny-Smith-Apples.jpg",
+      benefits:
+        "Researchers also found that eating Granny Smith's can help combat against chronic inflammation, which can lead to diabetes.",
+      quantity: "91",
+      price: "30",
+      shelfLife: "36",
+      daysHeld: "18",
     },
     {
       name: "Peanut Butter",
@@ -246,66 +312,7 @@ const insertData = async () => {
       shelfLife: "5",
       daysHeld: "4",
     },
-    {
-      name: "Red Pepper",
-      category: "Produce",
-      imgURL:
-        "https://stirringmyspicysoul.com/wp-content/uploads/2019/07/IMG_0441.jpg",
-      benefits:
-        "Technically a fruit, red peppers are more common as a staple in the vegetable produce section. They're also an excellent source of vitamins A and C. Each half cup of raw red pepper provides you with 47 percent of your daily recommended intake of vitamin A and 159 percent of your vitamin C.",
-      quantity: "73",
-      price: "30",
-      shelfLife: "14",
-      daysHeld: "12",
-    },
-    {
-      name: "Granny Smith",
-      category: "Produce",
-      imgURL:
-        "https://www.jesmondfruitbarn.com.au/wp-content/uploads/2016/10/Jesmond-Fruit-Barn-Granny-Smith-Apples.jpg",
-      benefits:
-        "Researchers also found that eating Granny Smith's can help combat against chronic inflammation, which can lead to diabetes.",
-      quantity: "91",
-      price: "30",
-      shelfLife: "36",
-      daysHeld: "18",
-    },
-    {
-      name: "Yellow Pepper",
-      category: "Produce",
-      imgURL:
-        "https://cdn.shopify.com/s/files/1/0038/9405/0868/products/Pepper_Capsicum_Bell_Yellow_Qty_700x700.jpg?v=1556918915",
-      benefits:
-        "Red, Orange, and Yellow Bell Peppers are full of great health benefits—they're packed with vitamins and low in calories! They are an excellent source of vitamin A, vitamin C, and potassium. Bell Peppers also contain a healthy dose of fiber, folate, and iron.",
-      quantity: "103",
-      price: "30",
-      shelfLife: "14",
-      daysHeld: "7",
-    },
-    {
-      name: "Green Pepper",
-      category: "Produce",
-      imgURL:
-        "https://smileyfoodandstores.com/wp-content/uploads/2021/07/green-peppers.jpg",
-      benefits:
-        "Red, Orange, and Yellow Bell Peppers are full of great health benefits—they're packed with vitamins and low in calories! They are an excellent source of vitamin A, vitamin C, and potassium. Bell Peppers also contain a healthy dose of fiber, folate, and iron.",
-      quantity: "39",
-      price: "30",
-      shelfLife: "14",
-      daysHeld: "11",
-    },
-    {
-      name: "Honeycrisp",
-      category: "Produce",
-      imgURL:
-        "https://statesymbolsusa.org/sites/statesymbolsusa.org/files/primary-images/honeycrispapples.jpg",
-      benefits:
-        "The health benefits from eating apples are numerous. One medium Honeycrisp apple has 5 grams of fiber and only 80 calories. Because of the amount and type of fiber, an apple will help a person feel full longer, helping him or her to consume fewer calories daily. The pectin in apples may also help lower cholesterol.",
-      quantity: "64",
-      price: "30",
-      shelfLife: "270",
-      daysHeld: "103",
-    },
+
     {
       name: "Watermelon",
       category: "Produce",
@@ -331,6 +338,18 @@ const insertData = async () => {
       daysHeld: "267",
     },
     {
+      name: "Green Pepper",
+      category: "Produce",
+      imgURL:
+        "https://smileyfoodandstores.com/wp-content/uploads/2021/07/green-peppers.jpg",
+      benefits:
+        "Red, Orange, and Yellow Bell Peppers are full of great health benefits—they're packed with vitamins and low in calories! They are an excellent source of vitamin A, vitamin C, and potassium. Bell Peppers also contain a healthy dose of fiber, folate, and iron.",
+      quantity: "39",
+      price: "30",
+      shelfLife: "14",
+      daysHeld: "11",
+    },
+    {
       name: "Nutella",
       category: "Dry goods",
       imgURL:
@@ -349,18 +368,6 @@ const insertData = async () => {
         "https://www.chatelaine.com/wp-content/uploads/2018/08/types-of-onions.jpg",
       benefits:
         "Onions contain antioxidants and compounds that fight inflammation, decrease triglycerides and reduce cholesterol levels — all of which may lower heart disease risk. Their potent anti-inflammatory properties may also help reduce high blood pressure and protect against blood clots.",
-      quantity: "49",
-      price: "10",
-      shelfLife: "65",
-      daysHeld: "63",
-    },
-    {
-      name: "Garlic",
-      category: "Produce",
-      imgURL:
-        "https://www.almanac.com/sites/default/files/image_nodes/garlic-growing-guide.jpg",
-      benefits:
-        "Garlic is low in calories and rich in vitamin C, vitamin B6 and manganese. It also contains trace amounts of various other nutrients. Garlic supplements help prevent and reduce the severity of common illnesses like the flu and common cold. High doses of garlic appear to improve blood pressure for those with known high blood pressure (hypertension). In some instances, supplements may be as effective as regular medications.",
       quantity: "49",
       price: "10",
       shelfLife: "65",
