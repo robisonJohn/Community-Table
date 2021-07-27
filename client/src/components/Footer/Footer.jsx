@@ -4,7 +4,25 @@ function Footer() {
   return (
     <div className="Footer">
       <div id="copy-right">
-        Copyright © <span>The-Coolest-Devs.</span> All Rights Reserved
+        Copyright © <span>The-Coolest-Devs.</span> All Rights Reserved |{" "}
+        <a
+          href="https://github.com/ashleymhuynh"
+          target="_blank"
+          rel="noreferrer"
+        >
+          🦁 Ashley Huynh,
+        </a>{" "}
+        <a href="https://github.com/andreallt" target="_blank" rel="noreferrer">
+          🦏 Andrea Llano
+        </a>{" "}
+        &{" "}
+        <a
+          href="https://github.com/robisonJohn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          🐛 John Robison
+        </a>
       </div>
       <div id="github-logo">
         <a
