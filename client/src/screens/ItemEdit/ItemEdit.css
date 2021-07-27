@@ -1,27 +1,25 @@
-
-
 .item-edit {
   font-family: "Roboto", sans-serif;
   display: flex;
   background-color: white;
-  margin: 200px auto 0 auto;
+  margin: 12rem auto 0 auto;
   width: 80vw;
   max-height: 600px;
-  box-shadow: 2px 2px 6px 3px #2B331F;
+  box-shadow: 2px 2px 6px 3px #2b331f;
+  padding-left: 0 !important;
 }
 
 .edit-item-image {
   display: flex;
   background-size: cover;
-  min-height: 295px;
-  max-height: 295px;
-  min-width: 300px;
-  max-width: 300px;
-  margin: 10px;
-  margin-top: 70px;
-  object-fit: fill;
+  min-height: 48vh;
+  max-width: 48vh;
+  min-width: 15vw !important;
+  object-fit: cover;
 }
-
+.item-edit .form-select {
+  border: 1px solid #ced4da;
+}
 .edit-form {
   width: 90%;
   font-family: "Roboto", sans-serif;
@@ -30,53 +28,52 @@
   align-items: stretch;
 }
 
-.e-detail{
-  width: 90%;
+.e-detail {
+  width: 80vw !important;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 5px 40px 0 ;
+  margin: 5px;
+  margin-left: 3rem !important;
 }
 
-.name{
+.name {
   font-weight: 500;
   color: #546747;
+  margin-bottom: 1rem;
 }
 
-.e-input{
+.e-input {
   margin-bottom: 10px;
 }
 
-.e-label{
+.e-label {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
 }
 
-.e-button{
-line-height: 1.5;
-box-sizing: border-box;
-font-weight: 500;
-font-size: 15px;
-background-color: #546747 !important;
-border: 1px solid #546747 !important;
-color: white;
-border: none;
-border-radius: 2px;
-width: 100px;
-margin-bottom: 15px;
+.e-button {
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #546747 !important;
+  border: 1px solid #546747 !important;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  margin-bottom: 15px;
 }
 
-.button-box{
+.button-box {
   display: flex;
   justify-content: space-around;
- margin-top: 25px;
-
+  margin-top: 25px;
 }
 
 /* IPAD */
-@media only screen 
-and (max-device-width: 1024px) {
-  
+@media only screen and (max-device-width: 1024px) {
   .item-edit {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -84,7 +81,7 @@ and (max-device-width: 1024px) {
     margin: 200px auto 0 auto;
     width: 70vw;
   }
-  
+
   .edit-item-image {
     display: flex;
     background-size: cover;
@@ -93,7 +90,7 @@ and (max-device-width: 1024px) {
     min-width: 300px;
     max-width: 300px;
   }
-  
+
   .edit-form {
     width: 90%;
     font-family: "Roboto", sans-serif;
@@ -101,49 +98,47 @@ and (max-device-width: 1024px) {
     flex-direction: column;
     align-items: stretch;
   }
-  
-  .e-detail{
+
+  .e-detail {
     width: 90%;
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 5px 20px 0 ;
+    margin: 5px 20px 0;
   }
-  
-  .e-input{
+
+  .e-input {
     margin-bottom: 10px;
   }
-  
-  .e-label{
+
+  .e-label {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
   }
-  
-  .e-button-container{
+
+  .e-button-container {
     display: flex;
     justify-content: flex-end;
     width: 70vw;
     margin: 10px auto;
   }
-  
-  .e-button{
-  line-height: 1.5;
-  box-sizing: border-box;
-  font-weight: 500;
-  font-size: 15px;
-  background-color: #546747;
-  color: white;
-  border: none;
-  border-radius: 2px;
+
+  .e-button {
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #546747;
+    color: white;
+    border: none;
+    border-radius: 2px;
   }
-  
-
-
+}
+#quanity-container {
+  width: 10% !important;
 }
 
-
 @media only screen and (max-width: 600px) {
-
   .item-edit {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -153,14 +148,14 @@ and (max-device-width: 1024px) {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .edit-item-image {
     min-width: 99vw;
     min-height: 20vh;
     display: flex;
     background-size: cover;
   }
-  
+
   .edit-form {
     width: 95%;
     font-family: "Roboto", sans-serif;
@@ -168,27 +163,27 @@ and (max-device-width: 1024px) {
     flex-direction: column;
     align-items: stretch;
   }
-  
-  .e-detail{
+
+  .e-detail {
     width: 95%;
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 10px 20px 0 ;
+    margin: 10px 20px 0;
   }
-  
-  .e-input{
+
+  .e-input {
     margin-bottom: 10px;
     margin-left: 10px;
   }
-  
-  .e-label{
+
+  .e-label {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     margin-left: 10px;
   }
-  
-  .e-button{
+
+  .e-button {
     line-height: 1.5;
     box-sizing: border-box;
     font-weight: 500;
@@ -198,9 +193,4 @@ and (max-device-width: 1024px) {
     border: none;
     border-radius: 2px;
   }
-
-
-
-
-
 }

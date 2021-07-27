@@ -3,7 +3,7 @@ import { Layout } from "../../components";
 import { getItem, updateItem } from "../../services/items";
 import { useParams, Redirect, Link } from "react-router-dom";
 import "./ItemEdit.css";
-import { Form, Image, Button, Container } from 'react-bootstrap';
+import { Form, Image, Button, Container } from "react-bootstrap";
 
 const ItemEdit = (props) => {
   const [item, setItem] = useState({
@@ -47,11 +47,13 @@ const ItemEdit = (props) => {
     <Layout user={props.user}>
       <Container className="item-edit">
         <div id="image-container">
-          <Image className="edit-item-image" src={item.imgURL} alt={item.name} />
+          <Image
+            className="edit-item-image"
+            src={item.imgURL}
+            alt={item.name}
+          />
         </div>
-        
 
-        
         <Container className="e-detail">
           <Container className="name">{item.name}</Container>
           <Form
@@ -77,23 +79,13 @@ const ItemEdit = (props) => {
               </option>
             </Form.Select>
             <Form.Label className="e-label">Benefits</Form.Label>
-            <Form.Control 
+            <Form.Control
               as="textarea"
               rows={3}
               className="e-input"
               placeholder="Benefits"
               value={item.benefits}
               name="benefits"
-              required
-              onChange={handleChange}
-            />
-            <Container className="small-box"></Container>
-            <Form.Label className="e-label">Quantity</Form.Label>
-            <Form.Control
-              className="e-input"
-              placeholder="Quantity"
-              value={item.quantity}
-              name="quantity"
               required
               onChange={handleChange}
             />
@@ -106,10 +98,21 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <Container  className="button-box">
-            <Link to={`/inventory`}>
-              <Button className='e-button'> GO BACK </Button>
-            </Link>
+            <Container className="small-box"></Container>
+            <Form.Label className="e-label">Quantity</Form.Label>
+            <Form.Control
+              className="e-input"
+              placeholder="Quantity"
+              value={item.quantity}
+              name="quantity"
+              required
+              onChange={handleChange}
+              id="quanity-container"
+            />
+            <Container className="button-box">
+              <Link to={`/inventory`}>
+                <Button className="e-button"> GO BACK </Button>
+              </Link>
               <Button
                 type="submit"
                 className="e-button"
@@ -117,7 +120,7 @@ const ItemEdit = (props) => {
               >
                 CHANGE
               </Button>
-              </Container>
+            </Container>
           </Form>
         </Container>
       </Container>
