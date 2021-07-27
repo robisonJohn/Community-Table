@@ -86,11 +86,16 @@ https://community-table-mvp.herokuapp.com/api/items
 
 <p>In particular, food value should not be a discrete value (its static price at sale) but rather a continuous value represented by its expected value. In this case, the expected value is equal to the probability the food will sell at any given point in time multiplied by its initial store price.</p>
 
-<p>To estimate the probability a good will sell, we need to consider how close it is to expiration. In principle, the probability a good will be sold when it first arrives in the store is some value X. When the good expires, the probability it is purchased is equal to zero (assuming no one wants to purchase expired foods). Therefore, the probability that the food will be purchased at any time <em>t</em> is a function of how close an item is to expiration. We model this function below:</p>
+<p>To estimate the probability a good will sell, we need to consider how close it is to expiration. In principle, the probability a good will be sold when it first arrives in the store is some value P(0). When the good expires, the probability it is purchased is equal to zero (assuming no one wants to purchase expired foods). Therefore, the probability that the food will be purchased at any time <em>t</em> is a function of how close an item is to expiration. We model this function below:</p>
 
 <p>Let t be the number of days the item has been held. Let s denote the shelf life of the item. Then we can define the probability that an item is purchased at time t to be as follows: </p>
 
 P(t) = (1 - (t / s))
+
+<p>Therefore, the expected value of some good X that has a market value price of r at time t is equal to the following: </p>
+E[X] = r * (1 - (t / s))
+
+<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct t</p>
 
 
 
