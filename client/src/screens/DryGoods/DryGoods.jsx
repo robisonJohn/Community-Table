@@ -70,7 +70,7 @@ const Items = (props) => {
             setFilterResult(highestShelfLife(filterResult));
             break;
         default:
-            setFilterResult(items);
+            setFilterResult(filterDryGoods(items));
             break;
         }
     };
@@ -102,7 +102,7 @@ const Items = (props) => {
             setFilterResult(needToGo(items));
             break;
         default:
-            setFilterResult(items);
+            setFilterResult(filterDryGoods(items));
             break;
         }
     };
@@ -114,7 +114,7 @@ const Items = (props) => {
 
     const handleSubmit = (event) => event.preventDefault();
 
-    let result = items;
+    let result = filterDryGoods(items);
     if (filterResult.length > 0) {
         result = filterResult;
     }
