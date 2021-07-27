@@ -56,14 +56,22 @@ const AddItem = (props) => {
             />
           </Form.Group>
           <Form.Group>
-            <Form.Control
+            <Form.Select
               className="add-input"
               placeholder="Category"
               value={item.category}
               name="category"
               required
               onChange={handleChange}
-            />
+            >
+              <option>Select a category</option>
+              <option className="dry-goods" value="Dry goods">
+                Dry goods
+              </option>
+              <option className="produce" value="Produce">
+                Produce
+              </option>
+            </Form.Select>
           </Form.Group>
           <Form.Group>
             <Form.Control
@@ -93,7 +101,7 @@ const AddItem = (props) => {
             <Form.Control
               type="text"
               className="add-input"
-              placeholder="Quantity"
+              placeholder="Quantity (number of boxes: 10 lbs / box)"
               value={item.quantity}
               name="quantity"
               required
@@ -115,7 +123,7 @@ const AddItem = (props) => {
             <Form.Control
               type="text"
               className="add-input"
-              placeholder="Shelf Life"
+              placeholder="Shelf Life (in days)"
               value={item.shelfLife}
               name="shelfLife"
               required
