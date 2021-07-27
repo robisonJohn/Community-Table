@@ -2,20 +2,32 @@ import { useState, useEffect } from "react";
 import { Layout, Item } from "../../components";
 import { getItems } from "../../services/items";
 import "./Items.css";
-import { lowestQuantity, highestQuantity, lowestPrice, highestPrice, lowestShelfLife, highestShelfLife } from '../../utils/sort.js';
-import { filterDryGoods, filterProduce, goodItems, needToGo } from '../../utils/filter.js';
-import Sort from '../../components/Sort/Sort';
-import Filter from '../../components/Filter/Filter';
+import {
+  lowestQuantity,
+  highestQuantity,
+  lowestPrice,
+  highestPrice,
+  lowestShelfLife,
+  highestShelfLife,
+} from "../../utils/sort.js";
+import {
+  filterDryGoods,
+  filterProduce,
+  goodItems,
+  needToGo,
+} from "../../utils/filter.js";
+import Sort from "../../components/Sort/Sort";
+import Filter from "../../components/Filter/Filter";
 
 const Items = (props) => {
   const [items, setItems] = useState([]);
 
   const [applyFilter, setApplyFilter] = useState(false);
-  const [filterType, setFilterType] = useState('dry-goods');
+  const [filterType, setFilterType] = useState("dry-goods");
   const [filterResult, setFilterResult] = useState([]);
 
   const [applySort, setApplySort] = useState(false);
-  const [sortType, setSortType] = useState('lowest-quantity');
+  const [sortType, setSortType] = useState("lowest-quantity");
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -25,12 +37,11 @@ const Items = (props) => {
     fetchItems();
   }, []);
 
-
   const handleSort = (type) => {
-    if (type !== '' && type !== undefined) {
-      setSortType(type)
+    if (type !== "" && type !== undefined) {
+      setSortType(type);
     }
-/*
+    /*
 "lowest-quantity"
 "highest-quantity"
 "lowest-price"
@@ -40,84 +51,82 @@ const Items = (props) => {
 */
 
     switch (type) {
-      case 'lowest-quantity':
-        setFilterResult(lowestQuantity(filterResult))
-        break
-      case 'highest-quantity':
-        setFilterResult(highestQuantity(filterResult))
-        break
-      case 'lowest-price':
-        setFilterResult(lowestPrice(filterResult))
-        break
-      case 'highest-price':
-        setFilterResult(highestPrice(filterResult))
-        break
-      case 'lowest-shelf-life':
-        setFilterResult(lowestShelfLife(filterResult))
-        break
-      case 'highest-shelf-life':
-        setFilterResult(highestShelfLife(filterResult))
-        break 
+      case "lowest-quantity":
+        setFilterResult(lowestQuantity(filterResult));
+        break;
+      case "highest-quantity":
+        setFilterResult(highestQuantity(filterResult));
+        break;
+      case "lowest-price":
+        setFilterResult(lowestPrice(filterResult));
+        break;
+      case "highest-price":
+        setFilterResult(highestPrice(filterResult));
+        break;
+      case "lowest-shelf-life":
+        setFilterResult(lowestShelfLife(filterResult));
+        break;
+      case "highest-shelf-life":
+        setFilterResult(highestShelfLife(filterResult));
+        break;
       default:
-        setFilterResult(items)
-        break
-      
+        setFilterResult(items);
+        break;
     }
-  }
+  };
 
   if (applySort) {
-    handleSort(sortType)
-    setApplySort(false)
+    handleSort(sortType);
+    setApplySort(false);
   }
 
   const handleFilter = (type) => {
-    if (type !== '' && type !== undefined) {
-      setFilterType(type)
+    if (type !== "" && type !== undefined) {
+      setFilterType(type);
     }
-// dry-goods
-// produce
-// good-items
-// need-to-go
+    // dry-goods
+    // produce
+    // good-items
+    // need-to-go
     switch (type) {
-      case 'dry-goods':
-        setFilterResult(filterDryGoods(items))
-        break
-      case 'produce':
-        setFilterResult(filterProduce(items))
-        break
-      case 'good-items':
-        setFilterResult(goodItems(items))
-        break
-      case 'need-to-go':
-        setFilterResult(needToGo(items))
-        break
+      case "dry-goods":
+        setFilterResult(filterDryGoods(items));
+        break;
+      case "produce":
+        setFilterResult(filterProduce(items));
+        break;
+      case "good-items":
+        setFilterResult(goodItems(items));
+        break;
+      case "need-to-go":
+        setFilterResult(needToGo(items));
+        break;
       default:
-        setFilterResult(items)
-        break
-
+        setFilterResult(items);
+        break;
     }
-  }
+  };
 
   if (applyFilter) {
-    handleFilter(filterType)
-    setApplyFilter(false)
+    handleFilter(filterType);
+    setApplyFilter(false);
   }
 
-  const handleSubmit = (event) => event.preventDefault()
+  const handleSubmit = (event) => event.preventDefault();
 
-  let result = items
+  let result = items;
   if (filterResult.length > 0) {
     result = filterResult;
-  } 
-
+  }
 
   return (
     <Layout user={props.user}>
       <div className="Items">
         <h2 id="inventory-header">Table Inventory</h2>
-        <Filter handleFilter={handleFilter} onSubmit={handleSubmit}/>
-        <Sort handleSort={handleSort} onSubmit={handleSubmit}/>
-        
+        <div id="filter-sort">
+          <Filter handleFilter={handleFilter} onSubmit={handleSubmit} />
+          <Sort handleSort={handleSort} onSubmit={handleSubmit} />
+        </div>
 
         <div className="items-container">
           {result.map((item, index) => {
@@ -131,8 +140,7 @@ const Items = (props) => {
                 key={index}
               />
             );
-          })
-}
+          })}
         </div>
       </div>
     </Layout>
