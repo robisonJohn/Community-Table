@@ -9,8 +9,8 @@ function Filter(props) {
 
     return (
         <Form className="filter-container" onSubmit={props.handleSubmit}>
-            <Form.Label htmlFor="filter">FILTER BY:</Form.Label>
             <Form.Select className="filter" onChange={handleFilter}>
+                <option>&nbsp; FILTER BY: &nbsp;</option>
                 <option className="option" value="dry-goods">&nbsp; Dry Goods &nbsp;</option>
                 <option className="option" value="produce">&nbsp; Produce &nbsp;</option>
                 <option className="option" value="good-items">&nbsp; Items that are good to sell &nbsp;</option>
