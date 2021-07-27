@@ -14,7 +14,7 @@ const AddItem = (props) => {
     quantity: "",
     price: "",
     shelfLife: "",
-    daysHeld: ""
+    daysHeld: "",
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -101,34 +101,34 @@ const AddItem = (props) => {
             />
           </Form.Group>
           <Form.Group>
-            <Form.Control 
+            <Form.Control
               type="text"
-              className='add-input'
-              placeholder='Price'
+              className="add-input"
+              placeholder="Price per box"
               value={item.price}
-              name='price'
+              name="price"
               required
               onChange={handleChange}
             />
           </Form.Group>
           <Form.Group>
-            <Form.Control 
+            <Form.Control
               type="text"
-              className='add-input'
-              placeholder='Shelf Life'
+              className="add-input"
+              placeholder="Shelf Life"
               value={item.shelfLife}
-              name='shelfLife'
+              name="shelfLife"
               required
               onChange={handleChange}
             />
           </Form.Group>
           <Form.Group>
-            <Form.Control 
+            <Form.Control
               type="text"
-              className='add-input'
-              placeholder='Days Held'
+              className="add-input"
+              placeholder="Days Held"
               value={item.daysHeld}
-              name='daysHeld'
+              name="daysHeld"
               required
               onChange={handleChange}
             />
