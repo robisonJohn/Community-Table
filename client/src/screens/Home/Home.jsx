@@ -17,10 +17,10 @@ const Home = (props) => {
 
         <section className="category-box">
           <div className="produce">
-            <Link to="/produce"><h3 className="txt-category">PRODUCE</h3></Link>
+            <Link to="/produce" style={{ textDecoration: 'none' }}><h3 className="txt-category">PRODUCE</h3></Link>
           </div>
           <div className="dry-goods">
-            <Link to="/dry-goods"><h3 className="txt-category">DRY GOODS</h3></Link>
+            <Link to="/dry-goods" style={{ textDecoration: 'none' }}><h3 className="txt-category">DRY GOODS</h3></Link>
           </div>
         </section>
       </div>
