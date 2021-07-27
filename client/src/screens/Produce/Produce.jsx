@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Layout, Item } from "../../components";
 import { getItems } from "../../services/items";
-import "./Items.css";
+import "./Produce.css";
 import {
     lowestQuantity,
     highestQuantity,

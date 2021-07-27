@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { Layout, Item } from "../../components";
 import { getItems } from "../../services/items";
-import "./Items.css";
+import './DryGoods.css';
 import {
-  lowestQuantity,
-  highestQuantity,
-  lowestPrice,
-  highestPrice,
-  lowestShelfLife,
-  highestShelfLife,
+    lowestQuantity,
+    highestQuantity,
+    lowestPrice,
+    highestPrice,
+    lowestShelfLife,
+    highestShelfLife,
 } from "../../utils/sort.js";
 import {
     filterDryGoods,
