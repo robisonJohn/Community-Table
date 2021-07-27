@@ -9,8 +9,8 @@ function Sort(props) {
 
     return (
         <Form className="sort-container" onSubmit={props.handleSubmit}>
-            <Form.Label htmlFor="sort">SORT BY:</Form.Label>
             <Form.Select className="sort" onChange={handleSort}>
+                <option>&nbsp; SORT BY: &nbsp;</option>
                 <option className="option" value="lowest-quantity">&nbsp; Lowest Quantity to Highest Quantity &nbsp;</option>
                 <option className="option" value="highest-quantity">&nbsp; Highest Quantity to Lowest Quantity &nbsp;</option>
                 <option className="option" value="lowest-price">&nbsp; Lowest Price to Highest Price &nbsp;</option>
