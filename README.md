@@ -80,11 +80,8 @@ https://community-table-mvp.herokuapp.com/api/items
   <li>Small businesses will be able to optimize at the margins while also doing the most good for their communities</li>
 </ul>
 
-To do so, we will rely on two fundamental concepts:
-<ul>
-  <li> Expected Value - The probability of a given outcome multiplied by the value of this outcome </li>
-  <li>  </li>
-</ul>
+To do so, we will rely on the Expected Value - The probability of a given outcome multiplied by the value of this outcome
+
 
 
 
