@@ -22,6 +22,7 @@ nav {
 #logo {
   max-width: 30vw;
 }
+
 #companylogo {
   margin-left: 1.75rem;
 }
@@ -54,10 +55,12 @@ nav {
 }
 #welcome span {
   font-weight: 400;
-  text-transform: lowercase;
-}
+  text-transform: lowercase; }
 
-@media only screen and (max-width: 1920px) {
+
+
+@media only screen and (min-width: 1024px)
+and (max-width: 1920px) {
   #companylogo {
     margin-left: 9rem;
   }
@@ -70,8 +73,11 @@ nav {
     margin-right: -28rem;
     margin-bottom: 4.5rem;
   }
-}
-@media only screen and (max-width: 1024px) {
+} 
+
+
+@media only screen and (min-width: 769px) 
+and (max-width: 1024px) {
   #companylogo {
     margin-left: 1.5rem;
     width: 35vw;
@@ -85,22 +91,87 @@ nav {
     margin-right: -28rem;
     margin-bottom: 4.5rem;
   }
-}
-@media only screen and (max-width: 768px) {
-  #companylogo {
-    margin-left: 1.25rem;
+} 
+
+
+@media only screen and (min-width: 376px)
+ and (max-width: 768px) {
+
+  nav {
+    flex: 1;
+    position: fixed;
+    width: 90vw;
+    background-color: #fafaf2;
+    z-index: 1;
+    top: 0;
+    left: 0;
   }
+  .NavBar {
+    display: flex;
+    padding: 0;
+    padding-bottom: 1px;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: -10px;
+    box-shadow: 1px 1px 1px 0.3px #cecece;
+    width: 90vw;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  #logo {
+    max-width: 10vw;
+  }
+  
+  #companylogo {
+    margin: 10px 0 0 0;
+    width: 200px;
+  }
+  
   .links {
-    font-size: 1.1rem;
-    max-width: 57vw;
+    display: flex;
+    flex: 2;
+    max-width: 69vw;
+    align-items: center;
+    font-size: 1.4rem;
+    justify-content: flex-end;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #262d1e;
+    padding: 1rem;
+    margin-top: 2.25rem;
+    text-transform: uppercase;
+  }
+  
+  #welcome {
+    margin-bottom: 2.7rem;
+    margin-right: -33rem;
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #556747;
+  }
+
+  #welcome span {
+    font-weight: 400;
+    text-transform: lowercase;
+  font-size: 10px; }
+
+  .links {
+    font-size: .8rem;
+    max-width: 30vw;
     margin-top: 2.5rem;
     font-weight: 400;
   }
+
   #welcome {
     margin-right: -24rem;
     margin-bottom: 4rem;
   }
-}
+} 
+
 
 @media only screen and (max-width: 375px) {
   #companylogo {

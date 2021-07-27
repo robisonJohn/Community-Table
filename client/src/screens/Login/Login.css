@@ -16,12 +16,13 @@ body {
 
 #login-form {
   margin-top: 4rem;
-  border: 8px solid #2b331f;
+  border: 3x solid #2b331f;
   border-radius: 2%;
   padding: 20px;
+  padding-bottom: 1rem;
   width: 500px;
-  height: 400px;
-  background-color: white;
+  height: 45vh;
+  background-color: #bbc8ba;
 }
 
 #login-header {
@@ -59,7 +60,7 @@ body {
 }
 
 .form-input {
-  background-color: #fbe2c1 !important;
+  background-color: #ffff !important;
   font-size: 20px !important;
 }
 #error-button {
@@ -77,8 +78,10 @@ body {
 #login-button {
   font-size: 20px;
   width: 100px;
-  margin-top: 30px;
-  margin-left: 345px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+
   color: white !important;
   background-color: #546747;
   border: 1px solid #546747;
@@ -89,9 +92,14 @@ body {
   margin-top: 10px;
   margin-left: 168px;
   font-style: italic;
-  color: black;
+  color: rgb(104, 104, 104);
+  font-weight: 500;
 }
-
+@media only screen and (max-width: 1920px) {
+  #login-form {
+    height: 37vh;
+  }
+}
 @media only screen and (max-width: 1024px) {
   #login-header {
     margin: 0 auto;
@@ -99,10 +107,8 @@ body {
     font-size: 2rem !important;
   }
   #login-form {
-    border: 6px solid #2b331f !important;
-  }
-  #login-button {
-    margin-left: 340px;
+    margin-top: 4rem;
+    height: 27vh;
   }
 }
 
@@ -113,29 +119,26 @@ body {
   #login-signup {
     margin-top: 2rem;
   }
+  #login-form {
+    margin-top: 4rem;
+    height: 35vh;
+  }
   .form-control {
     margin-top: 2.5rem !important;
     margin-left: 0.5rem;
-  }
-  #login-button {
-    font-size: 20px;
-    width: 100px;
-    margin-top: 30px;
-    margin-left: 340px !important;
   }
 }
 @media only screen and (max-width: 375px) {
   #login-header {
     font-size: 1.75rem !important;
-    margin-top: 5rem !important;
-    margin-left: 8rem;
+    margin-top: -0.5rem !important;
+    margin-left: 9rem;
     text-align: center;
   }
   #login-form {
-    margin-top: 4rem;
-    margin-left: 11.5rem;
-    border: 4px solid #2b331f;
-    border-radius: 2%;
+    margin-top: 5rem;
+    margin-left: 12rem;
+    height: 42vh;
     padding: 0;
     max-width: 65%;
   }
@@ -153,11 +156,5 @@ body {
   #password-input {
     margin-left: 1.5rem;
     max-width: 92%;
-  }
-  #login-button {
-    font-size: 20px;
-    width: 100px;
-    margin-top: 30px;
-    margin-left: 315px !important;
   }
 }
