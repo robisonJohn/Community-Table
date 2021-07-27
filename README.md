@@ -50,8 +50,6 @@ export default mongoose.model('users', User)
 
 ```
 
-## MVP/PostMVP
-
 ### MVP
 
 - Navbar displays logo, name and links to browse products and to signup/signin.
@@ -68,10 +66,30 @@ export default mongoose.model('users', User)
 
 ### PostMVP
 
-- Sort by on display all products page.
-- Add consumer users
-- Change password functionality
+- Sort and filter functions for Items page based on tax law and economic theory.
 
 ## Heroku URL:
 
 https://community-table-mvp.herokuapp.com/api/items
+
+## Product Philosophy
+
+<p>The core idea behind Community Table is that we can leverage the notions of present and future value, supply and demand, economic optimization, and tax incentive structures in order to encourage grocery stores to donate excess inventory before the food goes to waste. This will have a two-pronged benefit: </p>
+<ul>
+  <li>Food waste and food insecurity will be simultaneously minimized</li>
+  <li>Small businesses will be able to optimize at the margins while also doing the most good for their communities</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
