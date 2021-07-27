@@ -9,7 +9,6 @@ const Home = (props) => {
         <div className="main-img">
           <div className="main-txt">
             <h3>
-              {" "}
               BRINGING COMMUNITIES TOGETHER ONE FILLED TABLE <br /> AT A TIME
             </h3>
             <Link to="/sign-up"><button className="sign-up-button">SIGN UP</button></Link>
