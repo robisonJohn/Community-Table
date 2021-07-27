@@ -139,11 +139,11 @@ and (max-device-width: 1024px) {
   .quantity {
     display: flex;
     font-size: 15px;
-    width: 110%;
+    width: 90%;
     align-items: baseline;
     justify-content: flex-end;
     height: 20px;
-    margin-top: -50px;
+    margin-top: -40px;
   }
   
   .quantity h4 {
@@ -159,7 +159,7 @@ and (max-device-width: 1024px) {
     width: 90%;
     align-items: baseline;
     justify-content: flex-end;
-    margin-top: -20px;
+    margin-top: 0px;
     padding: 0 10px;
   }
   
