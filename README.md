@@ -86,7 +86,7 @@ https://community-table-mvp.herokuapp.com/api/items
 
 <p>In particular, food value should not be a discrete value (its static price at sale) but rather a continuous value represented by its expected value. In this case, the expected value is equal to the probability the food will sell at any given point in time multiplied by its initial store price.</p>
 
-<p></p>
+<p>To estimate the probability a good will sell, </p>
 
 
 
