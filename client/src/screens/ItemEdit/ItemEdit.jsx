@@ -3,6 +3,7 @@ import { Layout } from "../../components";
 import { getItem, updateItem } from "../../services/items";
 import { useParams, Redirect, Link } from "react-router-dom";
 import "./ItemEdit.css";
+import { Form, Image, Button, Container } from 'react-bootstrap';
 
 const ItemEdit = (props) => {
   const [item, setItem] = useState({
@@ -44,26 +45,41 @@ const ItemEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="item-edit">
-        <img className="edit-item-image" src={item.imgURL} alt={item.name} />
-        <div className="e-detail">
-          <div className="name">{item.name}</div>
-          <form
+      <Container className="item-edit">
+        <div id="image-container">
+          <Image className="edit-item-image" src={item.imgURL} alt={item.name} />
+        </div>
+        
+
+        
+        <Container className="e-detail">
+          <Container className="name">{item.name}</Container>
+          <Form
             className="form-detail"
             className="edit-form"
             onSubmit={handleSubmit}
           >
-            <label className="e-label">Category</label>
-            <input
+            <Form.Label className="e-label">Category</Form.Label>
+            <Form.Select
               className="e-input"
               placeholder="Category"
               value={item.category}
               name="category"
               required
               onChange={handleChange}
-            />
-            <label className="e-label">Benefits</label>
-            <textarea
+            >
+              <option>Select a category</option>
+              <option className="dry-goods" value="Dry goods">
+                Dry goods
+              </option>
+              <option className="produce" value="Produce">
+                Produce
+              </option>
+            </Form.Select>
+            <Form.Label className="e-label">Benefits</Form.Label>
+            <Form.Control 
+              as="textarea"
+              rows={3}
               className="e-input"
               placeholder="Benefits"
               value={item.benefits}
@@ -71,9 +87,9 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <div className="small-box"></div>
-            <label className="e-label">Quantity</label>
-            <input
+            <Container className="small-box"></Container>
+            <Form.Label className="e-label">Quantity</Form.Label>
+            <Form.Control
               className="e-input"
               placeholder="Quantity"
               value={item.quantity}
@@ -81,8 +97,8 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <label className="e-label">Image</label>
-            <input
+            <Form.Label className="e-label">Image</Form.Label>
+            <Form.Control
               className="e-input"
               placeholder="Image Link"
               value={item.imgURL}
@@ -90,21 +106,21 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <div  className="button-box">
-              <Link className='e-button' to={`/inventory`}>
-             <button className='e-button'> GO BACK </button>
+            <Container  className="button-box">
+            <Link to={`/inventory`}>
+              <Button className='e-button'> GO BACK </Button>
             </Link>
-              <button
+              <Button
                 type="submit"
                 className="e-button"
                 onSubmit={handleSubmit}
               >
                 CHANGE
-              </button>
-              </div>
-          </form>
-        </div>
-      </div>
+              </Button>
+              </Container>
+          </Form>
+        </Container>
+      </Container>
     </Layout>
   );
 };
