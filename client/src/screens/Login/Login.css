@@ -95,12 +95,12 @@ body {
   color: rgb(104, 104, 104);
   font-weight: 500;
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   #login-form {
     height: 37vh;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 369px) and (max-width: 1024px) {
   #login-header {
     margin: 0 auto;
     margin-top: 1.5rem !important;
@@ -112,7 +112,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 376px) and (max-width: 768px) {
   #login-header {
     margin-top: -1rem !important;
   }

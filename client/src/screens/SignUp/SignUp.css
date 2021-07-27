@@ -41,7 +41,7 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   #signup-header {
     margin-top: 1.5rem !important;
     font-size: 2rem !important;
@@ -53,7 +53,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 376px) and (max-width: 768px) {
   #signup-header {
     margin-top: -1rem !important;
   }
