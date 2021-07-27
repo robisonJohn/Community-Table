@@ -19,7 +19,7 @@
 
   .layout-children {
     flex: 2;
-    padding: 1px;
+    padding: 0px;
     margin: 0px;
   }
 }
