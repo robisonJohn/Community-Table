@@ -57,6 +57,20 @@ nav {
   text-transform: lowercase;
 }
 
+@media only screen and (max-width: 1920px) {
+  #companylogo {
+    margin-left: 9rem;
+  }
+  .links {
+    font-size: 1.4rem;
+    max-width: 68.5vw;
+    margin-top: 2rem;
+  }
+  #welcome {
+    margin-right: -28rem;
+    margin-bottom: 4.5rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   #companylogo {
     margin-left: 1.5rem;

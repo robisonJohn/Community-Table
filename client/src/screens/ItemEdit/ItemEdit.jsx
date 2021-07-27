@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Layout } from "../../components";
 import { getItem, updateItem } from "../../services/items";
-import { useParams, Redirect } from "react-router-dom";
+import { useParams, Redirect, Link } from "react-router-dom";
 import "./ItemEdit.css";
 
 const ItemEdit = (props) => {
@@ -90,6 +90,10 @@ const ItemEdit = (props) => {
               required
               onChange={handleChange}
             />
+            <div  className="button-box">
+              <Link className='e-button' to={`/inventory`}>
+             <button className='e-button'> GO BACK </button>
+            </Link>
               <button
                 type="submit"
                 className="e-button"
@@ -97,6 +101,7 @@ const ItemEdit = (props) => {
               >
                 CHANGE
               </button>
+              </div>
           </form>
         </div>
       </div>

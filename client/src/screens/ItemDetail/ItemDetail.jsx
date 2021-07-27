@@ -23,6 +23,7 @@ if (!isLoaded) {
 }
 
 return(
+
   <Layout  user={props.user}>
     <h2 id="Detail-header">Details</h2>
     <div className="item-detail">
@@ -30,6 +31,7 @@ return(
       className="item-image"
       src={item.imgURL}
       alt={item.name} />
+
 
       <div className="detail">
         <div className="name">{item.name}</div>
