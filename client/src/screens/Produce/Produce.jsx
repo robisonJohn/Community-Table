@@ -70,7 +70,7 @@ import {
             setFilterResult(highestShelfLife(filterResult));
             break;
         default:
-            setFilterResult(items);
+            setFilterResult(filterProduce(items));
             break;
         }
     };
@@ -102,7 +102,7 @@ import {
             setFilterResult(needToGo(items));
             break;
         default:
-            setFilterResult(items);
+            setFilterResult(filterProduce(items));
             break;
         }
     };
@@ -114,7 +114,7 @@ import {
 
     const handleSubmit = (event) => event.preventDefault();
 
-    let result = items;
+    let result = filterProduce(items);
     if (filterResult.length > 0) {
         result = filterResult;
     }
