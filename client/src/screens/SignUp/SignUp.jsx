@@ -35,16 +35,16 @@ const SignUp = (props) => {
     } catch (error) {
       console.error(error);
       setForm({
-        username: "",
         company_name: "",
-        email: "",
-        password: "",
-        passwordConfirmation: "",
         addressOne: "",
         addressTwo: "",
         city: "",
         state: "",
         zip: "",
+        username: "",
+        email: "",
+        password: "",
+        passwordConfirmation: "",
         sError: true,
         errorMsg: "Sign Up Details Invalid",
       });
@@ -69,16 +69,16 @@ const SignUp = (props) => {
   };
 
   const {
-    username,
     company_name,
-    email,
-    password,
-    passwordConfirmation,
+    username,
     addressOne,
     addressTwo,
     city,
     state,
-    zip
+    zip,
+    email,
+    password,
+    passwordConfirmation,
   } = form;
 
   return (
@@ -89,119 +89,117 @@ const SignUp = (props) => {
         </div>
         <Form onSubmit={onSignUp} className="signup-form">
           <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="username"
-              value={username}
-              placeholder="Username"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
+            <Form.Group>
+              <Form.Control
+                required
+                type="text"
+                name="company_name"
+                value={company_name}
+                placeholder="Company Name"
+                onChange={handleChange}
+                className="sign-input"
+              />
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="addressOne"
+                  value={addressOne}
+                  placeholder="Address Line One"
+                  onChange={handleChange}
+                  className="sign-input"
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="addressTwo"
+                  value={addressTwo}
+                  placeholder="Address Line Two (unit #)"
+                  onChange={handleChange}
+                  className="sign-input"
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="city"
+                  value={city}
+                  placeholder="City"
+                  onChange={handleChange}
+                  className="sign-input"
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="state"
+                  value={state}
+                  placeholder="State"
+                  onChange={handleChange}
+                  className="sign-input"
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="zip"
+                  value={zip}
+                  placeholder="Zip Code"
+                  onChange={handleChange}
+                  className="sign-input"
+                />
+                <Form.Control
+                  required
+                  type="text"
+                  name="username"
+                  value={username}
+                  placeholder="Username"
+                  onChange={handleChange}
+                  className="sign-input"
+                />
+              </Form.Group>
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="company_name"
-              value={company_name}
-              placeholder="Company Name"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
+            <Form.Group>
+              <Form.Control
+                required
+                type="email"
+                name="email"
+                value={email}
+                placeholder="Email"
+                onChange={handleChange}
+                className="sign-input"
+              />
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              required
-              type="email"
-              name="email"
-              value={email}
-              placeholder="Email"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
+            <Form.Group>
+              <Form.Control
+                required
+                name="password"
+                value={password}
+                type="password"
+                placeholder="Password"
+                onChange={handleChange}
+                className="sign-input"
+              />
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              required
-              name="password"
-              value={password}
-              type="password"
-              placeholder="Password"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Control
-              required
-              name="passwordConfirmation"
-              value={passwordConfirmation}
-              type="password"
-              placeholder="Confirm Password"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="addressOne"
-              value={addressOne}
-              placeholder="Address Line One"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="addressTwo"
-              value={addressTwo}
-              placeholder="Address Line Two"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="city"
-              value={city}
-              placeholder="City"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="state"
-              value={state}
-              placeholder="State"
-              onChange={handleChange}
-              className="sign-input"
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Control
-              required
-              type="text"
-              name="zip"
-              value={zip}
-              placeholder="Zip Code"
-              onChange={handleChange}
-              className="sign-input"
-            />
+            <Form.Group>
+              <Form.Control
+                required
+                name="passwordConfirmation"
+                value={passwordConfirmation}
+                type="password"
+                placeholder="Confirm Password"
+                onChange={handleChange}
+                className="sign-input"
+              />
+            </Form.Group>
           </Form.Group>
           {renderError()}
         </Form>

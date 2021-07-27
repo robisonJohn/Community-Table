@@ -32,7 +32,21 @@
 
 .benefits {
   width: 40vw;
-  margin-top: -5px;
+  margin-top: 1px;
+}
+
+.h4-text {
+  width: 90%;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: 5px 0 0 5px;
+}
+
+.h4-text h4{
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 6px 0 0;
 }
 
 .quantity {
@@ -42,7 +56,7 @@
   align-items: baseline;
   justify-content: flex-end;
   height: 20px;
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 .quantity h4 {
