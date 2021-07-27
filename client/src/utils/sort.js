@@ -15,3 +15,9 @@ However, this is fine for now.
 
 export const lowestQuantity = arr => arr.sort((a, b) => parseInt(a.quantity) - parseInt(b.quantity))
 export const highestQuantity = arr => arr.sort((a, b) => parseInt(b.quantity) - parseInt(a.quantity))
+
+export const lowestPrice = arr => arr.sort((a,b) => parseInt(a.price) - parseInt(b.price))
+export const highestPrice = arr => arr.sort((a,b) => parseInt(b.price) - parseInt(a.price))
+
+export const lowestShelfLife = arr => arr.sort((a,b) => parseInt(a.shelfLife) - parseInt(b.shelfLife))
+export const highestShelfLife = arr => arr.sort((a,b) => parseInt(b.shelfLife) - parseInt(a.shelfLife))
