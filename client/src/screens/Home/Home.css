@@ -110,6 +110,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Layout{
+    margin: 0;
+  }
   body {
     margin: 0;
     padding: 0;
@@ -130,7 +133,7 @@
     display: flex;
     width: 100vw;
     height: 400px;
-    margin: 200px auto 0 auto;
+    margin: 200px 0;
     flex-direction: column;
   }
 
@@ -238,3 +241,8 @@
     margin-bottom: -7rem;
   }
 }
+
+/****** MEDIA QUERY FOR TABLET *******/ 
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+
+ }
