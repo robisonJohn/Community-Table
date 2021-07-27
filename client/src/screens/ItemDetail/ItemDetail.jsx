@@ -50,12 +50,14 @@ return(
               <Link to={`/items/${item._id}/edit`}>
                 <button className='d-button'> UPDATE TABLE </button>
               </Link>
+              <Link to={`/inventory`}>
               <button
                 className='d-button'
                 onClick={() => deleteItem(item._id)}
               >
                 DELETE ITEM
               </button>
+              </Link>
       </div>
   </Layout>
 
