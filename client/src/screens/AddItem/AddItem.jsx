@@ -64,10 +64,13 @@ const AddItem = (props) => {
               required
               onChange={handleChange}
             >
-              <option>Add a new category</option>
-              <option className="dry-goods" value="Dry goods">Dry goods</option>
-              <option className="produce" value="Produce">Produce</option>
-
+              <option>Select a category</option>
+              <option className="dry-goods" value="Dry goods">
+                Dry goods
+              </option>
+              <option className="produce" value="Produce">
+                Produce
+              </option>
             </Form.Select>
           </Form.Group>
           <Form.Group>
