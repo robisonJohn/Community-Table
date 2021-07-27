@@ -74,10 +74,16 @@ https://community-table-mvp.herokuapp.com/api/items
 
 ## Product Philosophy
 
-<p>The core idea behind Community Table is that we can leverage the notions of present and future value, supply and demand, economic optimization, and tax incentive structures in order to encourage grocery stores to donate excess inventory before the food goes to waste. This will have a two-pronged benefit: </p>
+<p>The core idea behind Community Table is that we can leverage the notions of present and future expected value, supply and demand, economic optimization, and tax incentive structures in order to encourage grocery stores to donate excess inventory before the food goes to waste. This will have a two-pronged benefit: </p>
 <ul>
   <li>Food waste and food insecurity will be simultaneously minimized</li>
   <li>Small businesses will be able to optimize at the margins while also doing the most good for their communities</li>
+</ul>
+
+To do so, we will rely on two fundamental concepts:
+<ul>
+  <li> Expected Value - The probability of a given outcome multiplied by the value of this outcome </li>
+  <li>  </li>
 </ul>
 
 
