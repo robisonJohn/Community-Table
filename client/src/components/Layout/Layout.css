@@ -11,7 +11,7 @@
 @media only screen and (max-width: 600px) {
 
   .Layout {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 
   .layout-children {
     flex: 2;
-    padding: 1px;
+    padding: 0px;
     margin: 0px;
   }
 }
