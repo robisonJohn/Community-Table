@@ -1,7 +1,7 @@
 nav {
   flex: 1;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #fafaf2;
   z-index: 1;
   top: 0;
@@ -15,7 +15,7 @@ nav {
   margin-right: -2px;
   margin-top: -10px;
   box-shadow: 1px 1px 1px 0.3px #cecece;
-  width: 100%;
+  width: 100vw;
   font-family: "Roboto", sans-serif;
 }
 
@@ -106,6 +106,7 @@ and (max-width: 1024px) {
     top: 0;
     left: 0;
   }
+
   .NavBar {
     display: flex;
     padding: 0;
@@ -113,8 +114,8 @@ and (max-width: 1024px) {
     margin-left: -2px;
     margin-right: -2px;
     margin-top: -10px;
-    box-shadow: 1px 1px 1px 0.3px #cecece;
-    width: 90vw;
+    box-shadow: 0 8px 6px -6px #cecece;
+    width: 70vw;
     font-family: "Roboto", sans-serif;
   }
   
@@ -146,12 +147,13 @@ and (max-width: 1024px) {
   
   #welcome {
     margin-bottom: 2.7rem;
-    margin-right: -33rem;
+    margin-right: 0px;
     text-transform: uppercase;
     font-weight: 450;
-    font-size: 1.2rem;
+    font-size: .9rem;
     font-style: italic;
     color: #556747;
+    width: 30vw;
   }
 
   #welcome span {
