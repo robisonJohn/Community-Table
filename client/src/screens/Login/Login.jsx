@@ -70,7 +70,7 @@ const Login = (props) => {
             </Row>
             <Row className="login-row">
               <Form id="login-form" onSubmit={onLogin}>
-                <Link to={`/sign-up`}>
+                <Link to={`/sign-up`} style={{ textDecoration: 'none' }}>
                   <p id="login-signup">Don't have an account? Sign up here!</p>
                 </Link>
                 <Form.Group className="form-element">

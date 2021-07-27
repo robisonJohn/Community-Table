@@ -1,3 +1,7 @@
+.text-category {
+  text-decoration: none !important;
+}
+
 .home {
   display: flex;
   flex-direction: column;
