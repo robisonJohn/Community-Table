@@ -7,6 +7,8 @@ import Logout from "./screens/Logout/Logout";
 import AddItem from "./screens/AddItem/AddItem";
 import ItemDetail from "./screens/ItemDetail/ItemDetail";
 import ItemEdit from "./screens/ItemEdit/ItemEdit";
+import Produce from './screens/Produce/Produce';
+import DryGoods from './screens/DryGoods/DryGoods.jsx';
 import { verifyUser } from "./services/users";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
@@ -32,6 +34,12 @@ function App() {
         <Route path="/inventory">
           <Items user={user} />
         </Route>
+        <Route path="/produce">
+          <Produce user={user}/>
+        </Route>
+        <Route path="/dry-goods">
+          <DryGoods user={user}/>
+        </Route>      
         <Route path="/sign-up">
           <SignUp setUser={setUser} />
         </Route>
