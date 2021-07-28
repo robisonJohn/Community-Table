@@ -88,17 +88,17 @@ https://community-table-mvp.herokuapp.com/api/items
 
 <p>To estimate the probability a good will sell, we need to consider how close it is to expiration. In principle, the probability a good will be sold when it first arrives in the store is some value P(0). When the good expires, the probability it is purchased is equal to zero (assuming no one wants to purchase expired foods). Therefore, the probability that the food will be purchased at any time <em>t</em> is a function of how close an item is to expiration. We model this function below:</p>
 
-<p>Let t be the number of days the item has been held. Let s denote the shelf life of the item. Then we can define the probability that an item is purchased at time t to be as follows: </p>
+<p>Let t be the number of days the item has been held. Let s denote the shelf life of the item. Then we can define the probability that an item X is purchased at time t with waste coefficient w to be as follows: </p>
 
-P(t) = (1 - (t / s))
+<em> P(t) = w * (1 - (t / s)) </em>
 
 <p>Therefore, the expected value of some good X that has a market value price of r at time t is equal to the following: </p>
 
-E[X] = r * (1 - (t / s))
+<em> E[X] = r * w * (1 - (t / s)) </em>
 
 <p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. However, the FDA has strict rules regarding donations. Therefore, food cannot just be given away at the point of expiration. Therefore, food must be given away at the exact inflection point at which the food's expected value falls below 25% of the fair market value. Let us model the tax deductible value of a good X below as follows: </p>
 
-D(X) = 0.25 * r
+<em> D(X) = 0.25 * r </em>
 
 <p>When the expected value of the food is greater than its deductible value, it is more optimal to sell the food than to give it away. However, as the expected value drops below its fair-market value, it is more optimal to donate than it is to sell. This can be modeled as follows: </p>
 
@@ -111,8 +111,6 @@ else:
   return - 1
   
 <p>We can model this in code as follows:</p>
-<p>Note: we recognize a key weakness of this model is that it assumes the probability that an item is purchased upon entering the store is 1. </p>
-
 
 
 ```
