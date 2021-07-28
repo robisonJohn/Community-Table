@@ -183,3 +183,37 @@ body {
   }
   
 }
+
+@media only screen and (max-width: 375px) {
+  #login-header {
+    font-size: 1.75rem !important;
+    margin-top: 1rem !important;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  #login-form {
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+    height: 42vh;
+    padding: 0;
+    max-width: 88vw;
+    margin-bottom: 0 !important;
+  }
+  #login-signup {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    margin-left: 6rem !important;
+    font-size: 0.75rem !important;
+  }
+  #email-input {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    max-width: 92%;
+    font-size: 0.95rem !important;
+  }
+  #password-input {
+    margin-left: 1rem;
+    max-width: 92%;
+    font-size: 0.95rem !important;
+  }
+}
