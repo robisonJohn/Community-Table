@@ -90,7 +90,11 @@ https://community-table-mvp.herokuapp.com/api/items
 
 <p>Let t be the number of days the item has been held. Let s denote the shelf life of the item. Then we can define the probability that an item X is purchased at time t with waste coefficient w to be as follows: </p>
 
-<em> P(t) = w * (1 - (t / s)) </em>
+```
+
+P(t) = w * (1 - (t / s))
+
+```
 
 <p>Therefore, the expected value of some good X that has a market value price of r at time t is equal to the following: </p>
 
