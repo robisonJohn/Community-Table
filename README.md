@@ -98,21 +98,33 @@ P(t) = w * (1 - (t / s))
 
 <p>Therefore, the expected value of some good X that has a market value price of r at time t is equal to the following: </p>
 
-<em> E[X] = r * w * (1 - (t / s)) </em>
+```
+
+E[X] = r * w * (1 - (t / s))
+
+```
 
 <p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. However, the FDA has strict rules regarding donations. Therefore, food cannot just be given away at the point of expiration. Therefore, food must be given away at the exact inflection point at which the food's expected value falls below 25% of the fair market value. Let us model the tax deductible value of a good X below as follows: </p>
 
-<em> D(X) = 0.25 * r </em>
+```
+
+D(X) = 0.25 * r
+
+```
 
 <p>When the expected value of the food is greater than its deductible value, it is more optimal to sell the food than to give it away. However, as the expected value drops below its fair-market value, it is more optimal to donate than it is to sell. This can be modeled as follows: </p>
 
 <p>Let S(X) represent a stepwise function that represents whether or not a good should be sold as follows: </p>
 
+```
 S(X) = E[X] - D(X)
 if S(X) >= 0:
   return 1
 else:
   return - 1
+  
+```
+
   
 <p>We can model this in code as follows:</p>
 
