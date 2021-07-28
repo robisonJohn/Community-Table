@@ -37,13 +37,14 @@
   margin-left: 57px;
   margin-top: 30px;
 }
-
+.AddItem add-input {
+  border: 1px solid #fff !important;
+}
 #submit-button {
   width: 150px;
   display: block;
   margin: 0 auto;
   margin-top: 1.4rem;
-  margin-left: 19rem;
   color: white !important;
   background-color: #546747;
   border: 1px solid #546747;
@@ -66,9 +67,6 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  #submit-button {
-    margin-left: 10rem;
-  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 768px) {
@@ -85,8 +83,7 @@
     min-width: 80% !important;
   }
   #submit-button {
-    width: 150px;
-    margin-left: 12rem;
+    width: 120px;
     margin-top: 0.25rem !important;
     margin-bottom: 0.5rem !important;
     font-weight: 500;
@@ -116,7 +113,6 @@
     font-size: 1.2rem !important;
     width: 125px;
     margin-top: 1.5rem !important;
-    margin-left: 7rem !important;
     margin-bottom: 0.25rem !important;
   }
 }

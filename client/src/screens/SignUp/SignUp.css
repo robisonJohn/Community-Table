@@ -11,7 +11,7 @@
   color: #546747;
   text-transform: uppercase;
   margin-bottom: 0 !important;
-  font-weight: 350;
+  font-weight: 350 !important;
 }
 
 .signup-form {
