@@ -37,7 +37,7 @@ const AddItem = (props) => {
     return <Redirect to={"/inventory"} />;
   }
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user} className="AddItem">
       <div id="add-item-header">
         <h2 id="add-header">ADD TO TABLE INVENTORY</h2>
       </div>
