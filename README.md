@@ -150,5 +150,3 @@ const needToGo = arr => arr.filter(element =>
 
 ```
 
-
-
