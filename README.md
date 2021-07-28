@@ -80,7 +80,7 @@ https://community-table-mvp.herokuapp.com/api/items
   <li>Small businesses will be able to optimize at the margins while also doing the most good for their communities</li>
 </ul>
 
-<p>To do so, we will rely on the idea of Expected Value, which is the probability of a given outcome multiplied by the value of this outcome.</p> 
+<p>To do so, we will rely on a concept from Probability Theory known as expected value, which is the probability of a given outcome multiplied by the value of this outcome (i.e. the expected payout of a given action).</p> 
 
 <p>A fundamental problem with grocery stores is that they see food pricing as a binary mechanism: the food item either sells for the price set by the store or else goes bad and is thrown out. Sales and other such discount events are too infrequent and imprecise to have a meaningful impact on supply and demand.</p>
 
