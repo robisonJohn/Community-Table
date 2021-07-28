@@ -48,7 +48,6 @@
     font-size: 2rem !important;
   }
   .signup-form {
-    border: 6px solid #2b331f !important;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -88,7 +87,6 @@
   .signup-form {
     margin-top: 4rem;
     margin-left: 5.5rem;
-    border: 4px solid #2b331f;
     border-radius: 2%;
     padding: 0;
     min-width: 80vw;
