@@ -148,9 +148,14 @@ body {
     max-width: 65%;
   }
   #login-signup {
-    margin: 2.5rem auto 0 auto;
+    margin-top: 10px;
+    font-style: italic;
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+    margin: 2.5rem auto 0 50px;
     font-size: 0.95rem !important;
   }
+ 
   #email-input {
     margin-top: 3rem;
     margin-left: 1.5rem;
@@ -165,4 +170,15 @@ body {
     margin: 5px;
     color: #2b331f !important;
   }
+
+  #login-header {
+    display: block;
+    margin: 10 auto;
+    margin-top: 0 !important;
+    text-align: center;
+    color: #546747;
+    text-transform: uppercase;
+    font-weight: 350;
+  }
+  
 }
