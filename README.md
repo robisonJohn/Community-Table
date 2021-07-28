@@ -82,7 +82,7 @@ https://community-table-mvp.herokuapp.com/api/items
 
 <p>To do so, we will rely on the idea of Expected Value, which is the probability of a given outcome multiplied by the value of this outcome.</p> 
 
-<p>A fundamental problem with grocery stores is that they see food pricing in a fundamentally binary nature--either it sells for the price set by the store, or it goes bad. Sales and other such discount events are too infrequent and imprecise to have a meaningful impact on supply and demand.</p>
+<p>A fundamental problem with grocery stores is that they see food pricing as a binary mechanism: either the food item sells for the price set by the store; or else goes bad. Sales and other such discount events are too infrequent and imprecise to have a meaningful impact on supply and demand.</p>
 
 <p>In particular, food value should not be a discrete value (its static price at sale) but rather a continuous value represented by its expected value. In this case, the expected value is equal to the probability the food will sell at any given point in time multiplied by its initial store price.</p>
 
@@ -96,8 +96,30 @@ P(t) = (1 - (t / s))
 
 E[X] = r * (1 - (t / s))
 
-<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. However, the FDA has strict rules regarding donations. Therefore, food cannot just be given away at the point of expiration. Therefore, food must be given away at the exact inflection point at which the food's expected value falls below 25% of the fair market value.</p>
+<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. However, the FDA has strict rules regarding donations. Therefore, food cannot just be given away at the point of expiration. Therefore, food must be given away at the exact inflection point at which the food's expected value falls below 25% of the fair market value. Let us model the tax deductible value of a good X below as follows: </p>
 
+D(X) = 0.25 * r
+
+<p>When the expected value of the food is greater than its deductible value, it is more optimal to sell the food than to give it away. However, as the expected value drops below its fair-market value, it is more optimal to donate than it is to sell. This can be modeled as follows: </p>
+
+<p>Let S(X) represent a stepwise function that represents whether or not a good should be sold as follows: </p>
+
+S(X) = E[X] - D(X)
+if S(X) >= 0:
+  return 1
+else:
+  return - 1
+  
+<p>We can model this in code as follows:</p>
+```
+const goodItems = arr => arr.filter(element => 
+    (element.price * (1 - (element.daysHeld / element.shelfLife))) >= element.price * 0.25
+)
+const needToGo = arr => arr.filter(element => 
+    element.price * 0.25 > (element.price * (1 - (element.daysHeld / element.shelfLife)))
+)
+
+```
 
 
 
