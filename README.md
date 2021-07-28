@@ -96,7 +96,7 @@ P(t) = (1 - (t / s))
 
 E[X] = r * (1 - (t / s))
 
-<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. </p>
+<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. However, the FDA has strict rules regarding donations. Therefore, food cannot just be given away at the point of expiration. Therefore, food must be given away at the exact inflection point at which the food's expected value falls below 25% of the fair market value.</p>
 
 
 
