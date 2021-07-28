@@ -25,6 +25,7 @@
 .item-image {
   display: flex;
   background-size: cover;
+  height: 80vh !important;
 }
 
 .detail {
@@ -115,9 +116,13 @@
   text-align: center;
 }
 
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1920px) {
+@media only screen and (min-device-width: 1659px) and (max-device-width: 1920px) {
   .item-detail {
     width: 59vw;
+    margin-bottom: 2.5rem;
+  }
+  .detail {
+    margin-top: 1rem;
     margin-bottom: 2.5rem;
   }
   .button-container {
@@ -127,6 +132,39 @@
     margin-left: 37rem;
   }
 }
+@media only screen and (min-device-width: 1403px) and (max-device-width: 1658px) {
+  .item-detail {
+    width: 57vw;
+  }
+  .detail {
+    margin-bottom: 3rem;
+  }
+  .benefits {
+    width: 35vw;
+  }
+  .button-container {
+    margin-top: 2rem;
+    width: 30vw;
+    margin-left: 39rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1402px) {
+  .item-detail {
+    width: 66vw;
+  }
+  .detail {
+    margin-bottom: 3rem;
+  }
+  .benefits {
+    width: 41vw;
+  }
+  .button-container {
+    margin-top: 2rem;
+    width: 30vw;
+    margin-left: 34rem;
+  }
+}
+
 /* IPAD */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .item-detail {
