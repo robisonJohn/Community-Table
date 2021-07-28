@@ -132,10 +132,10 @@ else:
 ```
 
 const goodItems = arr => arr.filter(element => 
-    (element.price * (1 - (element.daysHeld / element.shelfLife))) >= element.price * 0.25
+    (element.price * waste * (1 - (element.daysHeld / element.shelfLife))) >= element.price * 0.25
 )
 const needToGo = arr => arr.filter(element => 
-    element.price * 0.25 > (element.price * (1 - (element.daysHeld / element.shelfLife)))
+    element.price * 0.25 > (element.price * waste * (1 - (element.daysHeld / element.shelfLife)))
 )
 
 ```
