@@ -142,7 +142,7 @@ body {
   }
   #login-form {
     margin-top: 5rem;
-    margin: 0 auto;
+    margin: 10px auto;
     height: 42vh;
     padding: 0;
     max-width: 65%;
@@ -158,11 +158,12 @@ body {
  
   #email-input {
     margin-top: 3rem;
-    margin-left: 1.5rem;
+    margin-left: 0;
     max-width: 92%;
   }
+  
   #password-input {
-    margin-left: 1.5rem;
+    margin-left: 0;
     max-width: 92%;
   }
 
@@ -173,7 +174,7 @@ body {
 
   #login-header {
     display: block;
-    margin: 10 auto;
+    margin: 20 auto;
     margin-top: 0 !important;
     text-align: center;
     color: #546747;
