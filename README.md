@@ -111,6 +111,7 @@ else:
   return - 1
   
 <p>We can model this in code as follows:</p>
+<p>Note: we recognize a key weakness of this model is that it assumes the probability that an item is purchased upon entering the store is 1. </p>
 ```
 
 const goodItems = arr => arr.filter(element => 
@@ -123,7 +124,7 @@ const needToGo = arr => arr.filter(element =>
 ```
 
 
-<p>Note: we recognize a key weakness of this model is that it assumes the probability that an item is purchased upon entering the store is 1. </p>
+
 
 
 
