@@ -93,9 +93,10 @@ https://community-table-mvp.herokuapp.com/api/items
 P(t) = (1 - (t / s))
 
 <p>Therefore, the expected value of some good X that has a market value price of r at time t is equal to the following: </p>
+
 E[X] = r * (1 - (t / s))
 
-<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct t</p>
+<p>Similarly, we know that New York City law dictates that any organization can make deductions on their annual taxes for charitable food donations. In particular, you can deduct 25% of the fair-market value of any good you donate off your tax returns. </p>
 
 
 
