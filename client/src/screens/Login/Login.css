@@ -117,7 +117,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   #login-header {
     margin-top: -1rem !important;
   }
@@ -133,24 +133,22 @@ body {
     margin-left: 0.5rem;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   #login-header {
     font-size: 1.75rem !important;
     margin-top: -0.5rem !important;
-    margin-left: 9rem;
+    margin: 0 auto;
     text-align: center;
   }
   #login-form {
     margin-top: 5rem;
-    margin-left: 13rem;
+    margin: 0 auto;
     height: 42vh;
     padding: 0;
     max-width: 65%;
   }
   #login-signup {
-    margin-top: 2.5rem;
-    margin-bottom: 0;
-    margin-left: 145px;
+    margin: 2.5rem auto 0 auto;
     font-size: 0.95rem !important;
   }
   #email-input {
@@ -161,5 +159,10 @@ body {
   #password-input {
     margin-left: 1.5rem;
     max-width: 92%;
+  }
+
+  .form-element {
+    margin: 5px;
+    color: #2b331f !important;
   }
 }
