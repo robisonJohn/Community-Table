@@ -1,7 +1,7 @@
 # Community-Table
 
 This is an application that integrates information between grocery stores and community organizations for at-risk food discovery.
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
 ## Project Requirements
 
 <ul>
