@@ -2,16 +2,6 @@
 
 This is an application that integrates information between grocery stores and community organizations for at-risk food discovery.
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-- <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
-@@ text in purple (and bold)@@
-```
-
-
 
 ## Project Requirements
 
