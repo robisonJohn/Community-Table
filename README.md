@@ -121,7 +121,7 @@ S(X) = E[X] - D(X)
 if S(X) >= 0:
   return 1
 else:
-  return - 1
+  return 0
   
 ```
 
